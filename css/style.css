@@ -66,6 +66,7 @@ body {
     margin-top: 60px;
     width: 100%;
     display: block;
+    max-width: 1200px;
   }
 
   .polosa {
