@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/dashbord.css">
+</head>
+<body>
+  <section><a href="index.html">← На главную</a></section>
+
+    <h2>Добро пожаловать, <span id="student-name"></span>!</h2>
+<p>Ваш курс:</p>
+
+<div id="courses">
+  <div id="french-card" class="course-card" style="display: none;">
+    <p>Французский для начинающих</p>
+    <button onclick="location.href='Lessons/french/frlist/frlist.html'">Перейти к урокам</button>
+  </div>
+
+  <div id="english-card" class="course-card" style="display: none;">
+    <p>Английский для детей</p>
+    <button onclick="location.href='Lessons/english/enlist/enlist.html'">Перейти к урокам</button>
+  </div>
+</div>
+
+<div id="englishbegin-card" class="course-card" style="display: none;">
+  <p>Английский для начинающих</p>
+  <button onclick="location.href='Lessons/englishbegin/enlist/enlist.html'">Перейти к урокам</button>
+</div>
+<br>
+</div>
+    <div id="logout">
+    <button onclick="location.href='index.html'">Выйти</button>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
