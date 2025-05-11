@@ -62,7 +62,7 @@ body {
     cursor: pointer;
   }
 
-  .picture1 {
+  .picture1 img {
     margin-top: 60px;
     width: 100%;
     max-width: 1200px;
