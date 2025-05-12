@@ -62,9 +62,17 @@ body {
     cursor: pointer;
   }
 
-  .picture1 img {
-    margin-top: 60px;
+  .banner-mobile {
+    display: none;
     width: 100%;
+    margin-top: 60px;
+    max-width: 767px;
+  }
+    
+  .banner-desktop {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
     max-width: 1200px;
   }
 
