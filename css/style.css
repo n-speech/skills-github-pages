@@ -159,7 +159,16 @@ body {
       width: 100%;
     }
   }
-  
+
+/*Адаптивность*/
+  @media (max-width: 768px) {
+    .banner-desktop {
+      display: none;
+    }
+    .banner-mobile {
+      display: block;
+    }
+  }
 
   #about, #courses, #inscription, #freetry, #payment {
     margin-top: 3rem;
