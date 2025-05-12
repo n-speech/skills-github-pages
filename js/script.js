@@ -18,9 +18,9 @@ async function getUnlockedLessons(studentName) {
   });
 
   // Закрытие меню при клике на ссылку
- /* navLinks.forEach(link => {
+    navLinks.forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('show');
       burger.innerHTML = '&#9776;';
     });
-  });*/
+  });
