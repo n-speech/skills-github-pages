@@ -1,16 +1,15 @@
 
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /* Общие стили */
 body {
   font-family: sans-serif;
-
     width: 100%;
     max-width: 1200px;
-    
+    margin: 0 auto;
   }
 
 
@@ -28,6 +27,7 @@ body {
     width: 100%;
     padding: 0 1rem;
     max-width: 1200px;
+    margin: 0 auto;
     gap: 1rem;
     background-color:#f9f9f9;
   }
