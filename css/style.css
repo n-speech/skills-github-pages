@@ -148,13 +148,7 @@ body {
   }
   
   /* Адаптивность */
-  @media (max-width: 1024px) {
-    .course-card {
-      width: 45%;
-    }
-  }
-  
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .course-card {
       width: 100%;
     }
