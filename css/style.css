@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 /* Общие стили */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: sans-serif;
     width: 100%;
