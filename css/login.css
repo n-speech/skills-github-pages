@@ -10,8 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
-  padding: 8rem;
+  min-height: 100vh;
+  padding: 4rem 1rem;
 }
 
 #login-section {
@@ -52,11 +52,31 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
   width: 100%;
-  
 }
 
 #login-section button:hover {
   background-color: #f0f4fa;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 600px) {
+  body {
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  #login-section {
+    padding: 1.5rem 1rem;
+  }
+
+  #login-section h2 {
+    font-size: 1.5rem;
+  }
+
+  #login-section input,
+  #login-section button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
 }
