@@ -36,9 +36,17 @@ function renderLessons(courseName, progress) {
   for (let i = 1; i <= 10; i++) {
     const li = document.createElement('li');
 
-    if (progress >= (i - 1) * 10) {
+    // Урок 1 открыт всегда
+    if (i === 1) {
       const link = document.createElement('a');
-      link.href = `courses/${folder}/lesson${i}.html`;
+      link.href = `/courses/${folder}/lesson1.html`;
+      link.textContent = `Урок 1`;
+      li.appendChild(link);
+    }
+    // Остальные уроки открываются при нужном прогрессе
+    else if (progress >= (i - 1) * 10) {
+      const link = document.createElement('a');
+      link.href = `/courses/${folder}/lesson${i}.html`;
       link.textContent = `Урок ${i}`;
       li.appendChild(link);
     } else {
@@ -49,6 +57,7 @@ function renderLessons(courseName, progress) {
     list.appendChild(li);
   }
 }
+
 
 document.getElementById('logout-button').addEventListener('click', () => {
   localStorage.removeItem('currentUser');
