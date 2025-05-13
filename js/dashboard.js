@@ -22,7 +22,7 @@ function getCourseFolder(course) {
     case 'Английский для начинающих': return 'english-beginner';
     case 'Английский для продолжающих': return 'english-intermediate';
     case 'Английский для детей': return 'english-kids';
-    case 'Французский': return 'french';
+    case 'Французский для начинающих': return 'french';
     default: return 'unknown';
   }
 }
