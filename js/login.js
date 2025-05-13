@@ -1,8 +1,8 @@
 const users = {
-  'Dana': { password: '1234', course: 'Французский', progress: 10 },
-  'Alex': { password: '5678', course: 'Английский', progress: 20 },
-  'Timur': { password: '4321', course: 'Английский для детей', progress: 0 },
-  'Boris': { password: '8765', course: 'Английский для продолжающих', progress: 30 }
+  'Dana': { password: '1234', course: 'Французский для начинающих', progress: 10 },
+  'Alex': { password: 'abcd', course: 'Английский для детей', progress: 20 },
+  'Timur': { password: 'abcd', course: 'Английский для продолжающих', progress: 0 },
+  'Boris': { password: 'Boris123', course: 'Французский для начинающих', progress: 30 }
 };
 
 function login() {
