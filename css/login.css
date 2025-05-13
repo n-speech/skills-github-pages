@@ -1,102 +1,62 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif;
   background-color: #f9f9f9;
-  color: #275492;
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 8rem;
 }
-h2 {
-  font-size: 2rem;
+
+#login-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
+}
+
+#login-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
   color: #275492;
 }
 
-p, li {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-
-
-#login-section, #dashboard {
-  max-width: 400px;
-  margin: 2rem auto;
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-input {
+#login-section input {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
+  border: 1px solid #b5b1b1;
+  border-radius: 10px;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
 }
-button {
+
+#login-section button {
+  background-color: white;
+  color: #275492;
+  border: 2px solid #275492;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
   width: 100%;
-  background-color: white;
-  color: #275492;
-  border: 2px solid #275492;
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
 }
-button:hover {
+
+#login-section button:hover {
   background-color: #f0f4fa;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-#lesson-list {
-  list-style: none;
-  margin-top: 1rem;
-  padding: 0;
-}
-
-#lesson-list li {
-  background: white;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
-}
-#dashboard {
-  display: none;
-}
-
-.button.white {
-  background-color: white;
-  color: #275492;
-  border: 2px solid #275492;
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.button.white:hover {
-  background-color: #f0f4fa;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  
 }
