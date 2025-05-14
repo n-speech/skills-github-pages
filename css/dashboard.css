@@ -6,17 +6,17 @@ body {
 }
 
 #dashboard {
-  max-width: 400px;
+  max-width: 700px;
   margin: 0 auto;
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   color: #275492;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -28,7 +28,7 @@ table {
 
 th, td {
   border: 1px solid #ccc;
-  padding: 0.8rem;
+  padding: 0.5rem;
   text-align: left;
 }
 
