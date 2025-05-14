@@ -6,7 +6,7 @@ body {
 }
 
 #dashboard {
-  max-width: 700px;
+  max-width: 350px;
   margin: 0 auto;
   background-color: white;
   padding: 2rem;
@@ -20,35 +20,42 @@ h2 {
   margin-bottom: 1rem;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
   margin-top: 1rem;
 }
 
-th, td {
+.lesson-card {
   border: 1px solid #ccc;
-  padding: 0.8rem;
-  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-th {
-  background-color: #275492;
-  color: white;
+.lesson-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #275492;
+}
+
+.lesson-card .status {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-card .grade {
+  font-style: italic;
+  color: #555;
 }
 
 .locked {
   color: gray;
-  font-style: italic;
 }
-
-input[type="text"] {
-  width: 100%;
-  padding: 0.4rem;
-  border: 1px solid #275492;
-  border-radius: 6px;
-}
-
 
 
 a {
@@ -74,4 +81,30 @@ a:hover {
 
 .button:hover {
   background-color: #1d3e72;
+}
+
+.progress-container {
+  margin-top: 1rem;
+}
+
+.progress-wrapper {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin: 0.5rem 0;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #275492;
+  transition: width 0.5s ease;
+  border-radius: 10px 0 0 10px;
+}
+
+#progress-text {
+  font-weight: bold;
+  color: #275492;
 }
