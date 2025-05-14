@@ -27,34 +27,55 @@ function getCourseFolder(course) {
   }
 }
 
+// Твои оценки для каждого ученика
+const allGrades = {
+  'Dana': {
+    'lesson1': 'Отлично',
+    'lesson2': 'Хорошо',
+    'lesson3': 'Нужно доработать'
+  },
+  'Alex': {
+    'lesson1': 'Хорошо',
+    'lesson2': 'Отлично'
+  }
+};
+
 function renderLessons(courseName, progress) {
-  const list = document.getElementById('lesson-list');
-  list.innerHTML = '';
+  const tableBody = document.querySelector('#lesson-list tbody');
+  tableBody.innerHTML = '';
 
   const folder = getCourseFolder(courseName);
+  const user = JSON.parse(localStorage.getItem('currentUser'));
+  const userGrades = allGrades[user.name] || {};
 
   for (let i = 1; i <= 10; i++) {
-    const li = document.createElement('li');
+    const tr = document.createElement('tr');
 
-    // Урок 1 открыт всегда
-    if (i === 1) {
+    // Урок
+    const lessonCell = document.createElement('td');
+    if (progress >= (i - 1) * 10) {
       const link = document.createElement('a');
-      link.href = `/courses/${folder}/lesson1.html`;
-      link.textContent = `Урок 1`;
-      li.appendChild(link);
-    }
-    // Остальные уроки открываются при нужном прогрессе
-    else if (progress >= (i - 1) * 10) {
-      const link = document.createElement('a');
-      link.href = `/courses/${folder}/lesson${i}.html`;
+      link.href = `courses/${folder}/lesson${i}.html`;
       link.textContent = `Урок ${i}`;
-      li.appendChild(link);
+      lessonCell.appendChild(link);
     } else {
-      li.textContent = `Урок ${i} (закрыт)`;
-      li.classList.add('locked');
+      lessonCell.textContent = `Урок ${i}`;
+      lessonCell.classList.add('locked');
     }
 
-    list.appendChild(li);
+    // Статус
+    const statusCell = document.createElement('td');
+    statusCell.textContent = progress >= (i - 1) * 10 ? 'Открыт' : 'Закрыт';
+
+    // Оценка
+    const gradeCell = document.createElement('td');
+    gradeCell.textContent = userGrades[`lesson${i}`] || '-';
+
+    // Добавить в таблицу
+    tr.appendChild(lessonCell);
+    tr.appendChild(statusCell);
+    tr.appendChild(gradeCell);
+    tableBody.appendChild(tr);
   }
 }
 
