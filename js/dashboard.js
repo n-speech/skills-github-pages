@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const userData = JSON.parse(localStorage.getItem('currentUser'));
 
@@ -11,14 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('student-name').textContent = userData.name;
   document.getElementById('student-course').textContent = userData.course;
-  document.getElementById('progress').textContent = userData.progress;
 
-  renderLessons(userData.course, userData.progress);
+  const user = users[userData.name];
+
+  // Теперь передаём массив открытых уроков
+  renderLessons(userData.name, user.course, user.openLessons, user.grades);
 });
 
 function getCourseFolder(course) {
   switch (course) {
-    
     case 'Английский для начинающих': return 'english-beginner';
     case 'Английский для продолжающих': return 'english-intermediate';
     case 'Английский для детей': return 'english-kids';
@@ -27,58 +26,48 @@ function getCourseFolder(course) {
   }
 }
 
-// Твои оценки для каждого ученика
-const allGrades = {
-  'Dana': {
-    'lesson1': 'Отлично',
-    'lesson2': 'Хорошо',
-    'lesson3': 'Нужно доработать'
-  },
-  'Alex': {
-    'lesson1': 'Хорошо',
-    'lesson2': 'Отлично'
-  }
-};
+function renderLessons(name, course, openLessonsArray, grades) {
+  const grid = document.getElementById('lesson-grid');
+  grid.innerHTML = '';
 
-function renderLessons(courseName, progress) {
-  const tableBody = document.querySelector('#lesson-list tbody');
-  tableBody.innerHTML = '';
+  const folder = getCourseFolder(course);
 
-  const folder = getCourseFolder(courseName);
-  const user = JSON.parse(localStorage.getItem('currentUser'));
-  const userGrades = allGrades[user.name] || {};
+  const percent = Math.floor(((openLessonsArray.length - 1) / 10) * 100);
+  document.getElementById('progress-bar').style.width = `${percent}%`;
+  document.getElementById('progress-text').textContent = percent;
 
   for (let i = 1; i <= 10; i++) {
-    const tr = document.createElement('tr');
+    const card = document.createElement('div');
+    card.className = 'lesson-card';
 
-    // Урок
-    const lessonCell = document.createElement('td');
-    if (progress >= (i - 1) * 10) {
+    const title = document.createElement('h3');
+    title.textContent = `Урок ${i}`;
+    card.appendChild(title);
+
+    const status = document.createElement('div');
+    status.className = 'status';
+
+    if (openLessonsArray.includes(i)) {
       const link = document.createElement('a');
       link.href = `courses/${folder}/lesson${i}.html`;
-      link.textContent = `Урок ${i}`;
-      lessonCell.appendChild(link);
+      link.textContent = 'Перейти к уроку';
+      link.style.color = '#275492';
+      status.appendChild(link);
     } else {
-      lessonCell.textContent = `Урок ${i}`;
-      lessonCell.classList.add('locked');
+      status.textContent = 'Закрыт';
+      status.classList.add('locked');
     }
 
-    // Статус
-    const statusCell = document.createElement('td');
-    statusCell.textContent = progress >= (i - 1) * 10 ? 'Открыт' : 'Закрыт';
+    card.appendChild(status);
 
-    // Оценка
-    const gradeCell = document.createElement('td');
-    gradeCell.textContent = userGrades[`lesson${i}`] || '-';
+    const grade = document.createElement('div');
+    grade.className = 'grade';
+    grade.textContent = `Оценка: ${grades[i] || '-'}`;
+    card.appendChild(grade);
 
-    // Добавить в таблицу
-    tr.appendChild(lessonCell);
-    tr.appendChild(statusCell);
-    tr.appendChild(gradeCell);
-    tableBody.appendChild(tr);
+    grid.appendChild(card);
   }
 }
-
 
 document.getElementById('logout-button').addEventListener('click', () => {
   localStorage.removeItem('currentUser');
