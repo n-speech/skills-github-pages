@@ -1,23 +1,22 @@
-const users = {
-  'Dana': { password: '1234', course: 'Французский для начинающих', progress: 30 },
-  'Alex': { password: 'abcd', course: 'Английский для детей', progress: 0 },
-  'Timur': { password: 'abcd', course: 'Английский для продолжающих', progress: 0 },
-  'Boris': { password: 'Boris123', course: 'Французский для начинающих', progress: 0 }
-};
+document.getElementById('login-form').addEventListener('submit', function (e) {
+  e.preventDefault();
 
-function login() {
-  const name = document.getElementById('name-input').value.trim();
-  const password = document.getElementById('password-input').value;
+  const username = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value.trim();
+  const errorMessage = document.getElementById('error-message');
 
-  if (users[name] && users[name].password === password) {
+  if (users[username] && users[username].password === password) {
+    const user = users[username];
+
     localStorage.setItem('currentUser', JSON.stringify({
-      name: name,
-      course: users[name].course,
-      progress: users[name].progress
+      name: username,
+      course: user.course,
+      progress: user.progress,
+      grades: user.grades
     }));
 
     window.location.href = 'dashboard.html';
   } else {
-    alert('Неверное имя или пароль');
+    errorMessage.textContent = 'Неверное имя или пароль. Попробуйте снова.';
   }
-}
+});
