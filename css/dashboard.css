@@ -20,20 +20,36 @@ h2 {
   margin-bottom: 1rem;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+table {
+  width: 100%;
+  border-collapse: collapse;
   margin-top: 1rem;
 }
 
-li {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
 }
 
-li.locked {
-  color: #aaa;
+th {
+  background-color: #275492;
+  color: white;
 }
+
+.locked {
+  color: gray;
+  font-style: italic;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #275492;
+  border-radius: 6px;
+}
+
+
 
 a {
   color: #275492;
