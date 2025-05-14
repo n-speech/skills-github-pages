@@ -11,7 +11,17 @@
     <h2>Добро пожаловать, <span id="student-name"></span>!</h2>
     <p>Ваш курс: <strong id="student-course"></strong></p>
     <p>Прогресс: <span id="progress"></span>%</p>
-    <ul id="lesson-list"></ul>
+    <table id="lesson-list">
+      <thead>
+        <tr>
+          <th>Урок</th>
+          <th>Статус</th>
+          <th>Оценка</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    
     <button id="logout-button" class="button">Выйти</button>
   </section>
   <script src="js/dashboard.js"></script>
