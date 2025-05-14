@@ -11,9 +11,10 @@ body {
   justify-content: center;
   align-items: flex-start;
   margin-top: 80px;
+  min-height: 100vh;
 }
 
-#login-section {
+#login {
   background-color: white;
   padding: 2.5rem;
   border-radius: 10px;
@@ -23,28 +24,40 @@ body {
   text-align: center;
 }
 
-#login-section h2 {
+#login h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #275492;
 }
 
-#login-section input {
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#login-form label {
+  text-align: left;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+#login-form input {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
   border: 2px solid #b5b1b1;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
-#login-section button {
+#login-form button {
   background-color: white;
   color: #275492;
   border: 2px solid #275492;
   padding: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
   border-radius: 10px;
   margin-top: 0.5rem;
@@ -53,9 +66,14 @@ body {
   width: 100%;
 }
 
-#login-section button:hover {
+#login-form button:hover {
   background-color: #f0f4fa;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#error-message {
+  color: red;
+  margin-top: 1rem;
 }
 
 /* Адаптация под мобильные устройства */
@@ -65,16 +83,16 @@ body {
     align-items: center;
   }
 
-  #login-section {
+  #login {
     padding: 1.5rem 1rem;
   }
 
-  #login-section h2 {
+  #login h2 {
     font-size: 1.5rem;
   }
 
-  #login-section input,
-  #login-section button {
+  #login-form input,
+  #login-form button {
     font-size: 1rem;
     padding: 0.75rem;
   }
