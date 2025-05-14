@@ -10,20 +10,23 @@
   <section id="dashboard">
     <h2>Добро пожаловать, <span id="student-name"></span>!</h2>
     <p>Ваш курс: <strong id="student-course"></strong></p>
-    <p>Прогресс: <span id="progress"></span>%</p>
-    <table id="lesson-list">
-      <thead>
-        <tr>
-          <th>Урок</th>
-          <th>Статус</th>
-          <th>Оценка</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    
+    
+    <div class="progress-container">
+      <label for="progress-bar">Прогресс:</label>
+      <div class="progress-wrapper">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <p><span id="progress-text">0</span>% завершено</p>
+    </div>
+    
+    <div id="lesson-grid" class="lesson-grid"></div>
+    
+
     
     <button id="logout-button" class="button">Выйти</button>
   </section>
+  <script src="js/userData.js"></script>
   <script src="js/dashboard.js"></script>
 </body>
 </html>
