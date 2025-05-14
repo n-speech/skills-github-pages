@@ -9,14 +9,14 @@ body {
   max-width: 700px;
   margin: 0 auto;
   background-color: white;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   color: #275492;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -28,7 +28,7 @@ table {
 
 th, td {
   border: 1px solid #ccc;
-  padding: 0.5rem;
+  padding: 0.8rem;
   text-align: left;
 }
 
