@@ -131,7 +131,7 @@ a:hover {
 }
 
 /* 📱 Адаптация под мобильные устройства */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body {
     padding: 1rem;
   }
