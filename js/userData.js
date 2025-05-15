@@ -11,7 +11,7 @@ const users = {
     },
     'Alex': {
       password: 'abcd',
-      course: 'Английский для начинающих',
+      course: 'Английский для детей',
       openLessons: [1, 2, 3],
       grades: {
         1: 'Отлично',
