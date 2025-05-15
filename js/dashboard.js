@@ -69,7 +69,19 @@ function renderLessons(name, course, openLessonsArray, grades) {
   }
 }
 
+document.getElementById('toggle-lessons').addEventListener('click', () => {
+  const grid = document.getElementById('lesson-grid');
+  const button = document.getElementById('toggle-lessons');
+
+  const isHidden = grid.style.display === 'none' || grid.style.display === '';
+
+  grid.style.display = isHidden ? 'grid' : 'none';
+  button.textContent = isHidden ? 'Скрыть уроки' : 'К урокам';
+});
+
 document.getElementById('logout-button').addEventListener('click', () => {
   localStorage.removeItem('currentUser');
   window.location.href = 'login.html';
 });
+
+
