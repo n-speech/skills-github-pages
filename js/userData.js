@@ -12,9 +12,9 @@ const users = {
     'Boris': {
       password: 'Boris123',
       course: 'Французский для начинающих',
-      openLessons: [1],
+      openLessons: [1, 2],
       grades: {
-        1: ''
+        1: 'отлично'
         
         
       }
