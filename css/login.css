@@ -76,6 +76,11 @@ body {
   margin-top: 1rem;
 }
 
+#login {
+  position: relative; /* добавь это */
+  /* остальное остаётся как есть */
+}
+
 .close-button {
   position: absolute;
   top: 1rem;
