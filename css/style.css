@@ -1,4 +1,13 @@
 
+:root {
+  --main-color: #4e89ae;
+  --accent-color: orange;
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +18,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
     width: 100%;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.2;
   }
 
 
@@ -25,14 +37,15 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    
     height: 60px;
     width: 100%;
+    color: var(--main-color);
+    background-color: var(--bg-color);
     padding: 0 1rem;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
     gap: 1rem;
-    background-color:#f9f9f9;
+    box-shadow: var(--shadow);
   }
   
   .logo {
@@ -52,8 +65,13 @@ body {
   
   .nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--main-color);
     font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .nav a:hover {
+    color: var(--accent-color);
   }
   
   /* Бургер по умолчанию скрыт */
@@ -69,20 +87,25 @@ body {
     display: none;
     width: 100%;
     margin-top: 60px;
-    max-width: 767px;
+   /*max-width: 767px;*/
   }
     
   .banner-desktop {
     display: block;
     width: 100%;
     margin-top: 60px;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
   }
 
   .polosa {
     margin-top: -1%;
-    background-color: #f7b132;
+    background-color: orange;
     height: 3rem;
+  }
+
+  h2 {
+    color: var(--main-color);
+    
   }
   
   /* Адаптивность */
@@ -141,24 +164,40 @@ body {
     border-radius: 10px;
   }
   
-  .btn {
-  background-color: #275492;
-  border: none;
-  color: white;
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  /* Наведение на кнопку */
-btn:hover {
-  background-color: #1d3e72;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+  .button {
+    position: relative;
+    padding: 12px 20px;
+    background: none;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    }
+    .button::before {
+      content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    transition: left 0.3s ease;
+    z-index: -1;
+    }
+  
+    /* Наведение на кнопку */
+    .button:hover::before {
+      left: 0;
+    }
+    .button:hover {
+      color: white;
+    }
+  
   
   /* Адаптивность */
   @media (max-width: 768px) {
@@ -182,15 +221,16 @@ btn:hover {
   }
 
   #about, #courses, #inscription, #freetry, #payment {
-    margin-top: 3rem;
-    margin-left: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
     margin-right: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .page1 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
  }
   
   
@@ -200,7 +240,8 @@ btn:hover {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
  }
 
   
