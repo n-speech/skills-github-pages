@@ -164,7 +164,7 @@ body {
     border-radius: 10px;
   }
   
-  .button {
+  .btn {
     position: relative;
     padding: 12px 20px;
     background: none;
@@ -178,7 +178,7 @@ body {
     cursor: pointer;
     transition: color 0.3s ease;
     }
-    .button::before {
+    .btn::before {
       content: "";
     position: absolute;
     top: 0;
@@ -194,7 +194,7 @@ body {
     .button:hover::before {
       left: 0;
     }
-    .button:hover {
+    .btn:hover {
       color: white;
     }
   
