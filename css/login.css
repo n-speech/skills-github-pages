@@ -81,6 +81,24 @@ body {
   /* остальное остаётся как есть */
 }
 
+.button {
+  background-color: white;
+  color: #023e8a;
+  border: 2px solid #275492;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f0f4fa;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 .close-button {
   position: absolute;
   top: 1rem;
