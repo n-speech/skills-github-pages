@@ -191,7 +191,7 @@ body {
     }
   
     /* Наведение на кнопку */
-    .button:hover::before {
+    .btn:hover::before {
       left: 0;
     }
     .btn:hover {
@@ -214,7 +214,7 @@ body {
     .banner-mobile {
       display: block;
     }
-    button {
+    .btn {
       padding: 0.8rem;
       font-size: 1rem;
     }
