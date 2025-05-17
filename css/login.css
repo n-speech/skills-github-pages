@@ -52,6 +52,12 @@ body {
   font-size: 1.2rem;
 }
 
+#login-form input:focus {
+  outline: none;
+  border-color: orange; /* или любой другой цвет */
+  background-color: #f0f4fa;
+}
+
 #login-form button {
   background-color: white;
   color: #275492;
