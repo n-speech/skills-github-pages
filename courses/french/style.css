@@ -23,8 +23,8 @@ p {
 }
 
 audio {
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 300px;
 }
 .title {
   text-align: left;
@@ -65,7 +65,7 @@ audio {
 
 button {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   margin-top: 15px;
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -89,7 +89,7 @@ button:hover {
 }
 
 /* 📱 Мобильная адаптация */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .letter {
     width: 50px;
     height: 50px;
@@ -134,12 +134,13 @@ form {
     }
     label {
       display: block;
+      margin-bottom: 10px;
   
     }
     input, textarea {
       width: 100%;
       padding: 8px;
-  
+      text-align: center;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
