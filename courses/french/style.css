@@ -11,15 +11,16 @@ body {
   background-color: #fff;
   color: #023d8ada;
   max-width: 1200px;
+  margin: 2 auto;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 audio {
