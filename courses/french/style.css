@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
   background-color: #fff;
   color: #023d8ada;
@@ -135,10 +135,9 @@ button:hover {
 
 form {
       background: white;
-      padding: 1rem;
       border-radius: 8px;
       max-width: 400px;
-      margin: auto;
+      margin: 0 auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
     }
@@ -149,7 +148,7 @@ form {
     input, textarea {
       width: 100%;
       padding: 8px;
-      margin: auto;
+      margin: 0 auto;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
