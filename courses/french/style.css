@@ -4,19 +4,27 @@ body {
   text-align: center;
   background-color: #fff;
   color: #023d8ada;
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
 }
 
+p {
+  font-size: 1rem;
+}
+
 audio {
-  margin: 10px 0 20px;
+  margin: 0 20px;
   width: 100%;
   max-width: 400px;
+}
+.title {
+  text-align: left;
+  margin: 10px;
 }
 
 .letters {
@@ -56,6 +64,7 @@ button {
   width: 100%;
   max-width: 300px;
   margin-top: 15px;
+  margin-bottom: 20px;
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
@@ -98,3 +107,44 @@ button:hover {
     font-size: 1rem;
   }
 }
+
+
+.letter.correct {
+  background-color: #c8f7c5;
+  border-color: #3cba54;
+}
+
+.letter.wrong {
+  background-color: #ffc9c9;
+  border-color: #ff4444;
+}
+
+
+.sortable {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
