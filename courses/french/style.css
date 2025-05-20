@@ -6,29 +6,32 @@
 
 body {
   font-family: Arial, sans-serif;
-  padding: 5px;
+  padding: 15px;
   text-align: center;
   background-color: #fff;
   color: #023d8ada;
   max-width: 1200px;
-  margin: 2 auto;
+  margin: auto;
 }
 
-h1 {
+h1 h2 h3 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  padding: 1rem;
 }
 
 audio {
-  width: 90%;
-  max-width: 300px;
+  margin: 0 20px;
+  width: 100%;
+  max-width: 400px;
 }
 .title {
   text-align: left;
+  margin-left: 1rem;
 }
 
 .letters {
@@ -41,7 +44,7 @@ audio {
 
 .letter {
   border: 2px solid orange;
-  padding: 10px;
+  padding: 15px;
   font-size: 24px;
   width: 60px;
   height: 45px;
@@ -66,7 +69,7 @@ audio {
 
 button {
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
   margin-top: 15px;
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -90,16 +93,16 @@ button:hover {
 }
 
 /* 📱 Мобильная адаптация */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .letter {
     width: 50px;
     height: 50px;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 20px;
+    padding: 10px;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   button {
@@ -127,11 +130,11 @@ button:hover {
 
 form {
       background: white;
+      padding: 20px;
       border-radius: 8px;
       max-width: 400px;
-
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
+  
     }
     label {
       display: block;
@@ -142,6 +145,7 @@ form {
       width: 100%;
       padding: 8px;
       text-align: center;
+      margin: 10px auto;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
