@@ -37,7 +37,46 @@ def send_file():
             smtp.starttls()
             smtp.login(SMTP_USER, SMTP_PASSWORD)
             smtp.send_message(msg)
-        return "Письмо отправлено успешно", 200
+        return '''
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Отправка успешна</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 80px;
+                background-color: #f9f9f9;
+            }
+            h1 {
+                color: #2e7d32;
+                font-size: 32px;
+            }
+            .button {
+                display: inline-block;
+                margin-top: 30px;
+                padding: 12px 24px;
+                font-size: 18px;
+                color: white;
+                background-color: #1976d2;
+                border: none;
+                border-radius: 8px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+            .button:hover {
+                background-color: #1565c0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Письмо отправлено успешно!</h1>
+        <a class="button" href="/">Вернуться на главную</a>
+    </body>
+    </html>
+''', 200
     except Exception as e:
         return f"Ошибка при отправке письма: {e}", 500
 
