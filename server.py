@@ -5,8 +5,8 @@ import os
 
 app = Flask(__name__)
 
-EMAIL_SENDER = os.environ.get("EMAIL_SENDER")
-EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+SMTP_USER = os.environ.get("SMTP_USER")
+SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD")
 EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER")
 
 @app.route("/send", methods=["POST"])
@@ -19,7 +19,7 @@ def send_file():
 
     msg = EmailMessage()
     msg["Subject"] = f"Домашняя работа от {name}"
-    msg["From"] = EMAIL_SENDER
+    msg["From"] = SMTP_USER
     msg["To"] = EMAIL_RECEIVER
     msg.set_content(f"{name} отправил(а) домашнюю работу.")
 
@@ -32,7 +32,7 @@ def send_file():
 
     try:
         with smtplib.SMTP_SSL("mail.privateemail.com", 465) as smtp:
-            smtp.login(EMAIL_SENDER, EMAIL_PASSWORD)
+            smtp.login(SMTP_USER, SMTP_PASSWORD)
             smtp.send_message(msg)
     except Exception as e:
         return f"Ошибка при отправке письма: {e}", 500
