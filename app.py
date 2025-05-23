@@ -32,8 +32,13 @@ def send_file():
 
     try:
         with smtplib.SMTP("mail.privateemail.com", 587) as smtp:
-    smtp.starttls()
-    smtp.login(SMTP_USER, SMTP_PASSWORD)
-    smtp.send_message(msg)
-except Exception as e:
-    return f"Ошибка при отправке письма: {e}", 500
+            smtp.starttls()
+            smtp.login(SMTP_USER, SMTP_PASSWORD)
+            smtp.send_message(msg)
+        return "Письмо отправлено успешно", 200
+    except Exception as e:
+        return f"Ошибка при отправке письма: {e}", 500
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
