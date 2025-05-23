@@ -58,26 +58,10 @@ def send_file_route():
                 color: #2e7d32;
                 font-size: 32px;
             }
-            .button {
-                display: inline-block;
-                margin-top: 30px;
-                padding: 12px 24px;
-                font-size: 18px;
-                color: white;
-                background-color: #1976d2;
-                border: none;
-                border-radius: 8px;
-                text-decoration: none;
-                transition: background-color 0.3s;
-            }
-            .button:hover {
-                background-color: #1565c0;
-            }
         </style>
     </head>
     <body>
         <h1>Письмо отправлено успешно!</h1>
-        <a class="button" href="/">Вернуться на главную</a>
     </body>
     </html>
 ''', 200
