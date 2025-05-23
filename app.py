@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, send_file
 from flask_cors import CORS
 import smtplib
 from email.message import EmailMessage
@@ -11,8 +11,12 @@ SMTP_USER = os.environ.get("SMTP_USER")
 SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD")
 EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER")
 
+@app.route("/")
+def home():
+    return send_file("index.html")
+
 @app.route("/send", methods=["POST"])
-def send_file():
+def send_file_route():
     name = request.form.get("name")
     file = request.files.get("file")
 
@@ -73,7 +77,7 @@ def send_file():
     </head>
     <body>
         <h1>Письмо отправлено успешно!</h1>
-        <a class="button" href="/index.html">Вернуться на главную</a>
+        <a class="button" href="/">Вернуться на главную</a>
     </body>
     </html>
 ''', 200
