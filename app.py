@@ -1,9 +1,11 @@
 from flask import Flask, request
+from flask_cors import CORS
 import smtplib
 from email.message import EmailMessage
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 SMTP_USER = os.environ.get("SMTP_USER")
 SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD")
@@ -38,7 +40,6 @@ def send_file():
         return "Письмо отправлено успешно", 200
     except Exception as e:
         return f"Ошибка при отправке письма: {e}", 500
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
