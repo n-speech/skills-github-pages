@@ -73,7 +73,7 @@ def send_file():
     </head>
     <body>
         <h1>Письмо отправлено успешно!</h1>
-        <a class="button" href="/">Вернуться на главную</a>
+        <a class="button" href="/index.html">Вернуться на главную</a>
     </body>
     </html>
 ''', 200
