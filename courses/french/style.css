@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background-color: #fff;
   color: #023d8ada;
@@ -27,7 +27,7 @@ li {
 
 p {
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: 10px;
 }
 
 /* Аудио */
