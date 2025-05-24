@@ -88,7 +88,7 @@ audio {
 }
 
 /* Кнопка */
-button {
+.check-button {
   width: 100%;
   max-width: 300px;
   margin-top: 15px;
@@ -103,7 +103,7 @@ button {
   transition: background-color 0.2s;
 }
 
-button:hover {
+.check-button:hover {
   background-color: #0056b3;
 }
 
@@ -186,7 +186,7 @@ button:hover {
     font-size: 20px;
   }
 
-  button {
+  .check-button {
     font-size: 1rem;
     padding: 12px 16px;
   }
