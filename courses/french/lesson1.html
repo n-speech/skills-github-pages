@@ -203,21 +203,18 @@
   </section>
   
   <section class="title">
-  <section class="title">
   <h1>Часть 3. Прописи.</h1>
-</section>  
-<section class="title">
   <h1>Часть 4. Домашняя работа.</h1>
-</section>
+  </section>
 
-<form action="https://maria-djsh.onrender.com/send" method="POST" enctype="multipart/form-data">
-  <h3>Отправить домашнюю работу</h3>
-        <input type="text" name="name" placeholder="Имя" required>
-        <input type="file" name="file" required><br><br>
-         <button type="submit">Отправить</button>
-       
-    </form>
- </section>
+<section class="homework-form">
+  <h2>📩 Отправить домашнюю работу</h2>
+  <form action="https://maria-djsh.onrender.com/send" method="POST" enctype="multipart/form-data">
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+    <input type="file" id="file" name="file" required>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
 
   <script src="script.js"></script>
 </body>
