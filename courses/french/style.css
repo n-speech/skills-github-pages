@@ -97,14 +97,14 @@ audio {
   font-size: 1rem;
   border: none;
   border-radius: 6px;
-  background-color: #023e8a;
+  background-color: #0077cc;
   color: white;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .check-button:hover {
-  background-color: #0056b3;
+  background-color: #005fa3;
 }
 
 /* Результат */
