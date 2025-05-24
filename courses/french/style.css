@@ -90,7 +90,6 @@ audio {
 /* Кнопка */
 button {
   width: 100%;
-  max-width: 300px;
   margin-top: 15px;
   margin-bottom: 20px;
   padding: 10px 20px;
