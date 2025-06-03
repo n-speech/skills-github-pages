@@ -220,13 +220,13 @@ body {
     }
   }
 
-  #about, #courses, #inscription, #freetry, #payment {
+ /* #about, #courses, #inscription, #freetry, #payment {
     margin-top: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
-
+*/
   .page1 {
     margin-top: 0.5rem;
     margin-left: 2rem;
