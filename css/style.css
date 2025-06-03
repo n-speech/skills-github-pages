@@ -230,6 +230,7 @@ body {
   .page1 {
     margin-top: 0.5rem;
     margin-left: 2rem;
+    margin-right: 1rem;
     font-size: 1.3rem;
     color: var(--text-color);
  }
