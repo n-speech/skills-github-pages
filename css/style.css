@@ -73,7 +73,22 @@ body {
   .nav a:hover {
     color: var(--accent-color);
   }
-  
+.login-button {
+  margin-left: 20px;
+  padding: 8px 16px;
+  background-color: #ff6b00; /* ярко-оранжевый */
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e65c00;
+}
+
+
   /* Бургер по умолчанию скрыт */
   .burger {
     display: none;
