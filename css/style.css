@@ -24,7 +24,7 @@ body {
     margin: 0 auto;
     color: var(--text-color);
     background-color: var(--bg-color);
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
 
@@ -248,18 +248,12 @@ body {
     }
   }
 
- /* #about, #courses, #inscription, #freetry, #payment {
-    margin-top: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-*/
+
   .page1 {
     margin-top: 0.5rem;
     margin-left: 2rem;
     margin-right: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--text-color);
  }
   
