@@ -76,8 +76,7 @@ body {
 .login-button {
   margin-left: 20px;
   padding: 8px 16px;
-  background-color: #ff6b00; /* ярко-оранжевый */
-  color: white;
+  background-color: orange; /* ярко-оранжевый */
   border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
