@@ -82,7 +82,7 @@ body {
 }
 
 .login-button:hover {
-  background-color: lightorange;
+  background-color: var(--main-color);
 }
 
 
