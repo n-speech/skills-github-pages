@@ -214,7 +214,7 @@ audio {
 }
 
 .pdf-wrapper {
-  max-width: 850px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
   aspect-ratio: 4 / 3; /* или 16 / 9 если хочешь уже */
