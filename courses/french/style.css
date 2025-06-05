@@ -114,6 +114,25 @@ audio {
   font-size: 1.1rem;
 }
 
+/* PDF */
+.pdf-wrapper {
+  max-width: 750px;
+  width: 80%;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3; /* или 16 / 9 если хочешь уже */
+  border: 1px solid #ccc;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-link {
+  display: none;
+}
+
 /* Форма */
 .homework-form {
   background-color: #f9f9f9;
@@ -213,23 +232,7 @@ audio {
   } 
 }
 
-.pdf-wrapper {
-  max-width: 750px;
-  width: 80%;
-  margin: 0 auto;
-  aspect-ratio: 4 / 3; /* или 16 / 9 если хочешь уже */
-  border: 1px solid #ccc;
-}
 
-.pdf-frame {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.pdf-link {
-  display: none;
-}
 
 @media (max-width: 768px) {
   .pdf-wrapper {
