@@ -213,6 +213,21 @@ audio {
   }
  
 }
+  .pdf-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+  }
+
+  .pdf-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    border: none;
+  }
  .pdf-link {
     display: none;
   }
