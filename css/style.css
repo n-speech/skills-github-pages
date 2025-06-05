@@ -74,7 +74,7 @@ body {
     color: var(--accent-color);
   }
 .login-button {
-  padding: 8px 16px;
+  padding: 6px 14px;
   background-color: #ffd6a5;
   font-weight: bold;
   border-radius: 8px;
