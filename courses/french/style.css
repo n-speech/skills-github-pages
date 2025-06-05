@@ -213,7 +213,7 @@ audio {
   }
  
 }
-  .pdf-container {
+ .pdf-container {
     position: relative;
     width: 100%;
     max-width: 850px;
@@ -229,13 +229,14 @@ audio {
     height: 70vh;
     border: none;
   }
- .pdf-link {
+
+  .pdf-link {
     display: none;
   }
 
   @media (max-width: 768px) {
     .pdf-container {
-      height: auto; /* Убираем высоту, если iframe не показывается */
+      height: auto;
     }
 
     .pdf-iframe {
@@ -255,9 +256,6 @@ audio {
       margin: 20px auto;
     }
 
-
-
-    
     .pdf-link:hover {
       background-color: #005fa3;
     }
