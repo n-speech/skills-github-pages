@@ -216,6 +216,7 @@ audio {
   .pdf-container {
     position: relative;
     width: 100%;
+    max-width: 850px;
     height: 80vh;
     margin: auto;
   }
