@@ -145,6 +145,9 @@ body {
       display: block;
       z-index: 1001; /* over the menu */
     }
+    .polosa {
+         height: 2rem;
+    }
   }
   
   .card-row {
