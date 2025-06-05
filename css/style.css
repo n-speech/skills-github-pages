@@ -78,7 +78,7 @@ body {
   background-color: var(--accent-color);
   font-weight: bold;
   border-radius: 8px;
-  border: 2px solid #fb6437;
+  border: 3px solid #fb6437;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
