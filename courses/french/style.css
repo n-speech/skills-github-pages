@@ -234,7 +234,7 @@ audio {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .pdf-wrapper {
     display: none;
   }
