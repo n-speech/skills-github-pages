@@ -1,7 +1,2 @@
 User-agent: *
-Disallow: /
-Allow: /index.html
-Allow: /login.html
-Allow: /css/
-Allow: /js/
-Allow: /images/
+Disallow: /courses/
