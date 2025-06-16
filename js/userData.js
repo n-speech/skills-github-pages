@@ -10,7 +10,7 @@ const users = {
       }
     },
     'Boris': {
-      password: 'Boris123',
+      password: '1234',
       course: 'Французский для начинающих',
       openLessons: [1],
       grades: {
