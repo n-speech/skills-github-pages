@@ -314,7 +314,9 @@ padding: 8px 16px;
     color: var(--text-color);
  }
   
-  
+  .page1 li::marker {
+  color: var(--accent-color2); /* Только кружочки */
+}
 
   footer {
     margin-top: 2rem;
