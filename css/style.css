@@ -70,9 +70,9 @@ body {
 
   }
 
-/*.nav a:hover {
-    color: var(--accent-color);
-  }*/
+.nav a:hover {
+     font-weight: 700;
+  }
 
   
 
@@ -89,7 +89,7 @@ body {
 padding: 8px 16px;
   font-size: 10px;
   
-  font-weight: 800;
+  font-weight: 700;
   color: #023e8a;
   background-color: #ffad69;
   border: 2px solid #023e8a;
