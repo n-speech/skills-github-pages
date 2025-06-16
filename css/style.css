@@ -316,7 +316,7 @@ padding: 8px 16px;
  }
   
   .page1 li::marker {
-  color: var(--accent-color2); /* Только кружочки */
+  color: var(--accent-color); /* Только кружочки */
 }
 
   footer {
