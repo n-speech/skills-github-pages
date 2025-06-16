@@ -2,9 +2,9 @@ const users = {
     'Dana': {
       password: '1234',
       course: 'Французский для начинающих',
-      openLessons: [1, 2],
+      openLessons: [1],
       grades: {
-        1: 'отлично'
+        1: ''
         
         
       }
@@ -12,9 +12,9 @@ const users = {
     'Boris': {
       password: 'Boris123',
       course: 'Французский для начинающих',
-      openLessons: [1, 2],
+      openLessons: [1],
       grades: {
-        1: 'отлично'
+        1: ''
         
         
       }
@@ -32,11 +32,9 @@ const users = {
     'Alex': {
       password: 'abcd',
       course: 'Английский для детей',
-      openLessons: [1, 2, 3],
+      openLessons: [1],
       grades: {
-        1: 'отлично',
-        2: 'отлично',
-        3: ' '
+        1: ''
         
       }
     },
@@ -44,11 +42,12 @@ const users = {
     'Maria': {
       password: 'abcd',
       course: 'Английский для начинающих',
-      openLessons: [1],
+       openLessons: [1, 2, 3],
       grades: {
-        1: ' '
-        
-        
+        1: 'отлично',
+        2: 'отлично',
+        3: ' '
+          
       }
     },
 
