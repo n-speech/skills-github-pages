@@ -257,7 +257,7 @@ body {
 
     .course-card .more {
       font-size: 0.95rem;
-      color: var(--accent-color2);
+      color: var(--accent-color);
       font-weight: 500;
       text-decoration: underline;
       cursor: pointer;
