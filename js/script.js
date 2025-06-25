@@ -9,23 +9,19 @@ async function getUnlockedLessons(studentName) {
 
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
+const navLinks = document.querySelectorAll('#nav a'); // ← исправлено
 
+// Обработка клика по бургеру
 burger.addEventListener('click', () => {
   nav.classList.toggle('show');
+  burger.innerHTML = nav.classList.contains('show') ? '&times;' : '&#9776;';
 });
 
-
-
-  // Переключение меню и иконки
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('show');
-    burger.innerHTML = nav.classList.contains('show') ? '&times;' : '&#9776;';
+// Закрытие меню при клике на любую ссылку
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('show');
+    burger.innerHTML = '&#9776;';
   });
+});
 
-  // Закрытие меню при клике на ссылку
-    navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('show');
-      burger.innerHTML = '&#9776;';
-    });
-  });
