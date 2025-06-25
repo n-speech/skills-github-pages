@@ -38,7 +38,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 60px;
+    height: 100px;
     width: 100%;
     color: var(--main-color);
     background-color: var(--bg-color);
@@ -74,8 +74,6 @@ body {
 .nav a:hover {
      font-weight: 450;
   }
-
-  
 
  .login-button-wrapper {
   position: relative;
@@ -113,16 +111,15 @@ body {
   box-sizing: border-box;
 }
 
-
-    .login-button-wrapper:hover .login-button {
+ .login-button-wrapper:hover .login-button {
       transform: translateY(-6px);
     }
 
-    .login-button-wrapper:hover .login-button-shadow {
+ .login-button-wrapper:hover .login-button-shadow {
       opacity: 1;
     }
 
-    .login-button:active {
+ .login-button:active {
       transform: scale(0.96);
     }
 
@@ -134,19 +131,6 @@ body {
     cursor: pointer;
     border: none; 
   }
-
-  /*.banner-mobile {
-    display: none;
-    width: 100%;
-    margin-top: 60px;
-  }
-    
-  .banner-desktop {
-    display: block;
-    width: 100%;
-    margin-top: 60px;
-  
-  }*/
 
   .polosa {
     margin-top: -1%;
