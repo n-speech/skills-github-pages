@@ -172,7 +172,7 @@ body {
   bottom: -6px; /* смещение вниз от низа текста */
   width: 100%;
   height: 6px; /* толщина полоски */
-  background-color: var(--accent-color);
+  background-color: var(--accent-color2);
   z-index: -1;
   border-radius: 2px;
 }
