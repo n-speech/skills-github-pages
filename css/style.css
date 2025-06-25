@@ -90,7 +90,7 @@ body {
   font-size: 10px;
   font-weight: 400;
   color: #023e8a;
-  background-color: #ffe8d9;
+  background-color: var(--accent-color2);
   border: 2px solid #023e8a;
   border-radius: 9999px;
   cursor: pointer;
