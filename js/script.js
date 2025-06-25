@@ -7,9 +7,14 @@ async function getUnlockedLessons(studentName) {
   
   // Добавляем логику для бургер-меню
 
-  const burger = document.getElementById('burger');
-  const nav = document.getElementById('nav');
-  const navLinks = nav.querySelectorAll('a');
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('show');
+});
+
+
 
   // Переключение меню и иконки
   burger.addEventListener('click', () => {
