@@ -46,7 +46,8 @@ body {
     padding-bottom: 20px; /* 👈 добавлено */
     height: 100px;
     box-shadow: var(--shadow);
-   
+  }
+
   /* Жёлтая полоса на заднем плане ВНИЗУ header */
   .header-container::before {
   content: '';
