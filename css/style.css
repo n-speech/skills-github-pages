@@ -44,7 +44,7 @@ body {
     align-items: center;
     padding: 0 1rem;
     padding-bottom: 20px; /* 👈 добавлено */
-    height: 100px;
+    height: 95px;
     box-shadow: var(--shadow);
   }
 
@@ -61,7 +61,7 @@ body {
 }
   
   .logo {
-    height: 77px;
+    height: 85px;
     margin: 0;
   }
   
