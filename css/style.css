@@ -2,7 +2,7 @@
 :root {
   --main-color: #023e8a;
   --accent-color: #ffad69;
-  --accent-color2: #fb6437;
+  --accent-color2: #ffd966;
   --bg-color: #f9f9f9;
   --text-color: #333;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -151,7 +151,7 @@ body {
 
   .polosa {
     margin-top: -1%;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color2);
     height: 3rem;
   }
 
@@ -257,7 +257,7 @@ body {
 
     .course-card .more {
       font-size: 0.95rem;
-      color: var(--accent-color);
+      color: var(--accent-color2);
       font-weight: 500;
       text-decoration: underline;
       cursor: pointer;
