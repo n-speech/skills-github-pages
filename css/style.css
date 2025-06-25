@@ -169,33 +169,36 @@ body {
   
   /* ===== ADAPTIVE NAV ===== */
   @media (max-width: 780px) {
-    .nav {
+    @media (max-width: 780px) {
+  .nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100px; /* 👈 на уровень низа хедера */
-    right: 0;
-    left: 0; /* 👈 чтобы меню растягивалось на всю ширину */
+    top: 100px;
+    right: 1rem;
     background: white;
     padding: 1rem;
-    border-top: 1px solid #ddd;
+    border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 999;
+    width: 240px;
+    border-radius: 12px;
   }
-  
-    .nav.show {
-      display: flex;
-    }
-  
-    .burger {
-      display: block;
+
+  .nav.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
     font-size: 2rem;
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1001;  /* over the menu */
-    }   
+    z-index: 1001;
   }
+}
+
 
     /* ===== COURSE CARDS ===== */
   .card-row {
