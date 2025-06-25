@@ -191,11 +191,12 @@ body {
   
     .burger {
       display: block;
-      z-index: 1001; /* over the menu */
-    }
-    .polosa {
-         height: 2rem;
-    }
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;  /* over the menu */
+    }   
   }
   
   .card-row {
