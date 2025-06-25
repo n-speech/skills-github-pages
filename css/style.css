@@ -63,6 +63,7 @@ body {
   .logo {
     height: 85px;
     margin: 0;
+    margin-top: -2px;
   }
   
   .nav {
