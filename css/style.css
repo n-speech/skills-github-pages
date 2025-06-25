@@ -168,7 +168,6 @@ body {
 }
   
   /* ===== ADAPTIVE NAV ===== */
-  @media (max-width: 780px) {
     @media (max-width: 780px) {
   .nav {
     display: none;
