@@ -54,7 +54,7 @@ body {
   position: absolute;
   bottom: 0; /* 👈 ставим внизу */
   left: 0;
-  height: 26px;
+  height: 22px;
   width: 100%;
   background-color: var(--accent-color2);
   z-index: -1;
