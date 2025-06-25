@@ -172,17 +172,18 @@ body {
   /* Адаптивность */
   @media (max-width: 780px) {
     .nav {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 2.5rem;
-      right: 1rem;
-      background: white;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      z-index: 100;
-    }
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px; /* 👈 на уровень низа хедера */
+    right: 0;
+    left: 0; /* 👈 чтобы меню растягивалось на всю ширину */
+    background: white;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
   
     .nav.show {
       display: flex;
