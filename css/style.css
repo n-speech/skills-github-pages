@@ -142,12 +142,12 @@ body {
    /*max-width: 767px;*/
   }
     
-  .banner-desktop {
+  /*.banner-desktop {
     display: block;
     width: 100%;
     margin-top: 60px;
     /*max-width: 1200px;*/
-  }
+  }*/
 
   .polosa {
     margin-top: -1%;
