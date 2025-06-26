@@ -329,7 +329,7 @@ body {
   font-size: 16px;
   text-decoration: none;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease;
 }
