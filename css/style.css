@@ -189,18 +189,16 @@ body {
 }
 
 .desktop-image {
-  width: 100vw;            /* 100% ширины окна */
-  max-height: 500px;       /* ограничим высоту, если нужно */
-  object-fit: cover;       /* обрезает лишнее и не растягивает */
+  width: 100%;            /* 100% ширины окна */
+  max-width: 1200px;       /* ограничим высоту, если нужно */
   display: block;   
   margin-top: -2px;
     }
 
     .mobile-image {
       display: none;
-      width: 100vw;            /* 100% ширины окна */
-      max-height: 500px;       /* ограничим высоту, если нужно */
-      object-fit: cover;
+      width: 100%;            /* 100% ширины окна */
+      max-width: 300px;       /* ограничим высоту, если нужно */
       margin: 0 auto;
     }
 
