@@ -321,6 +321,7 @@ body {
 }
 
   .whatsapp-btn {
+  margin-top: 4px;  
   background-color: #25D366;
   color: white;
   border: none;
