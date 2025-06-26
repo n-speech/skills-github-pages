@@ -201,17 +201,6 @@ body {
   display: none;
 }
 
-/* На экранах до 768px показываем мобильную версию */
-@media (max-width: 768px) {
-  .banner-desktop {
-    display: none;
-  }
-
-  .banner-mobile {
-    display: block;
-  }
-}
-
 
     /* ===== COURSE CARDS ===== */
   .card-row {
@@ -345,8 +334,15 @@ body {
       padding: 0.8rem;
       font-size: 1rem;
     }
+     .banner-desktop {
+    display: none;
   }
 
- 
+  .banner-mobile {
+    display: block;
+  }
+  }
+
+
 
 
