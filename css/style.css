@@ -189,8 +189,8 @@ body {
 
 .desktop-image {
   width: 100%;            /* 100% ширины окна */
-  display: block;   
-  margin-top: -2px;
+  display: block;  
+  margin: 0 auto;
     }
 
     .mobile-image {
