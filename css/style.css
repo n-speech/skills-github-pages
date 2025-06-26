@@ -48,22 +48,11 @@ body {
     box-shadow: var(--shadow);
   }
 
-  /* Жёлтая полоса на заднем плане ВНИЗУ header */
-  .header-container::before {
-  content: '';
-  position: absolute;
-  bottom: 0; /* 👈 ставим внизу */
-  left: 0;
-  height: 22px;
-  width: 100%;
-  background-color: var(--accent-color2);
-  z-index: -1;
-}
   
   .logo {
     height: 87px;
     margin: 0;
-    margin-top: -10px;
+    margin-top: -8px;
   }
   
   .nav {
@@ -199,6 +188,13 @@ body {
   }
 }
 
+.full-width-image {
+  width: 100vw;            /* 100% ширины окна */
+  max-height: 500px;       /* ограничим высоту, если нужно */
+  object-fit: cover;       /* обрезает лишнее и не растягивает */
+  display: block;   
+  margin-top: -2px;       /* убирает лишние отступы сверху */
+}
 
     /* ===== COURSE CARDS ===== */
   .card-row {
