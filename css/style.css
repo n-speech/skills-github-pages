@@ -28,7 +28,6 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   font-size: 17px;
-  line-height: 1.25;
   }
 
    /* ===== HEADER ===== */
@@ -311,7 +310,7 @@ body {
       /* ===== PAGE CONTENT ===== */
   .page1 {
     margin: 0 1rem 0rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--text-color);
  }
   
