@@ -52,6 +52,7 @@ body {
   .logo {
     height: 87px;
     margin: 0;
+    margin-bottom: -1px;
   }
   
   .nav {
