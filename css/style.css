@@ -189,12 +189,29 @@ body {
 }
 
 .full-width-image {
-  width: 100vw;            /* 100% ширины окна */
-  max-height: 500px;       /* ограничим высоту, если нужно */
-  object-fit: cover;       /* обрезает лишнее и не растягивает */
-  display: block;   
-  margin-top: -2px;       /* убирает лишние отступы сверху */
+  width: 100vw;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  margin-top: -2px;
 }
+
+/* По умолчанию показываем только десктоп */
+.banner-mobile {
+  display: none;
+}
+
+/* На экранах до 768px показываем мобильную версию */
+@media (max-width: 768px) {
+  .banner-desktop {
+    display: none;
+  }
+
+  .banner-mobile {
+    display: block;
+  }
+}
+
 
     /* ===== COURSE CARDS ===== */
   .card-row {
