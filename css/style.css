@@ -188,15 +188,7 @@ body {
   }
 }
 
-  .desktop-image {
-      display: none;
-      width: 100%;
-      max-width: 1200px;
-      height: auto;
-      margin: 0 auto;
-    }
-
-    .mobile-image {
+.desktop-image {
       display: block;
       width: 100%;
       max-width: 1200px;
@@ -204,16 +196,23 @@ body {
       margin: 0 auto;
     }
 
-    @media (min-width: 768px) {
+    .mobile-image {
+      display: none;
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
       .desktop-image {
-        display: block;
+        display: none;
       }
 
       .mobile-image {
-        display: none;
+        display: block;
       }
     }
-
 
     /* ===== COURSE CARDS ===== */
   .card-row {
