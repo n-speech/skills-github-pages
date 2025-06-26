@@ -188,6 +188,8 @@ body {
 }
 
 .desktop-image {
+  position: relative;
+  top: -2px; /* подними вверх, подбери точное значение */
   width: 100%;            /* 100% ширины окна */
   display: block;  
   margin: 0 auto;
