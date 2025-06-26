@@ -44,7 +44,7 @@ body {
     align-items: center;
     padding: 0 1rem;
     padding-bottom: 20px; /* 👈 добавлено */
-    height: 90px;
+    height: 85px;
     box-shadow: var(--shadow);
   }
 
@@ -52,7 +52,7 @@ body {
   .logo {
     height: 87px;
     margin: 0;
-    margin-bottom: -1px;
+    margin-top: 3px;
   }
   
   .nav {
