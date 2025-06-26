@@ -198,9 +198,9 @@ body {
 
     .mobile-image {
       display: none;
-      width: 100%;
-      max-width: 1200px;
-      height: auto;
+      width: 100vw;            /* 100% ширины окна */
+      max-height: 500px;       /* ограничим высоту, если нужно */
+      object-fit: cover;
       margin: 0 auto;
     }
 
