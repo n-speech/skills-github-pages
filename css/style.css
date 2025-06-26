@@ -189,11 +189,11 @@ body {
 }
 
 .desktop-image {
-      display: block;
-      width: 100%;
-      max-width: 1200px;
-      height: auto;
-      margin: 0 auto;
+  width: 100vw;            /* 100% ширины окна */
+  max-height: 500px;       /* ограничим высоту, если нужно */
+  object-fit: cover;       /* обрезает лишнее и не растягивает */
+  display: block;   
+  margin-top: -2px;
     }
 
     .mobile-image {
