@@ -188,18 +188,31 @@ body {
   }
 }
 
-.full-width-image {
+ .desktop-image {
   width: 100vw;
   max-height: 500px;
   object-fit: cover;
   display: block;
   margin-top: -2px;
-}
+    }
 
-/* По умолчанию показываем только десктоп */
-.banner-mobile {
-  display: none;
-}
+    .mobile-image {
+      display: none;
+      width: 100vw;
+      max-height: 300px;
+      margin-top: -2px;
+    }
+
+    @media (max-width: 767px) {
+      .desktop-image {
+        display: none;
+      }
+
+      .mobile-image {
+        display: block;
+      }
+    }
+
 
 
     /* ===== COURSE CARDS ===== */
@@ -335,16 +348,6 @@ body {
       font-size: 1rem;
     }
   }
-/* Показываем только мобильный баннер при ширине до 768px */
-@media (max-width: 768px) {
-  .banner-desktop {
-    display: none;
-  }
-
-  .banner-mobile {
-    display: block;
-  }
-}
 
 
 
