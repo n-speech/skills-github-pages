@@ -190,7 +190,6 @@ body {
 
 .desktop-image {
   width: 100%;            /* 100% ширины окна */
-  max-width: 1200px;       /* ограничим высоту, если нужно */
   display: block;   
   margin-top: -2px;
     }
@@ -198,7 +197,6 @@ body {
     .mobile-image {
       display: none;
       width: 100%;            /* 100% ширины окна */
-      max-width: 300px;       /* ограничим высоту, если нужно */
       margin: 0 auto;
     }
 
