@@ -188,31 +188,31 @@ body {
   }
 }
 
- .desktop-image {
-  width: 100vw;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
-  margin-top: -2px;
+  .desktop-image {
+      display: none;
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
     }
 
     .mobile-image {
-      display: none;
-      width: 100vw;
-      max-height: 300px;
-      margin-top: -2px;
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
     }
 
-    @media (max-width: 767px) {
+    @media (min-width: 768px) {
       .desktop-image {
-        display: none;
+        display: block;
       }
 
       .mobile-image {
-        display: block;
+        display: none;
       }
     }
-
 
 
     /* ===== COURSE CARDS ===== */
