@@ -329,8 +329,6 @@ body {
   font-size: 16px;
   text-decoration: none;
   display: inline-block;
-  position: relative;
-  top: 5px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease;
 }
