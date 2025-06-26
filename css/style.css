@@ -135,7 +135,7 @@ body {
     /* ===== HEADINGS ===== */
   h1, h2 {
     color: var(--main-color);
-    margin: 2rem 1rem 0.5rem 2rem;
+    margin: 1rem 1rem 0.5rem 2rem;
   }
     
  .highlight {
