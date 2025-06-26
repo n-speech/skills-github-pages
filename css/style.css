@@ -272,23 +272,6 @@ body {
       align-self: flex-start;
     }
 
-  .whatsapp-btn {
-  background-color: #25D366;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 12px;
-  font-size: 16px;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
-}
-
     /* ===== BUTTON ===== */
     .btn {
     position: relative;
@@ -335,6 +318,23 @@ body {
   
   .page1 li::marker {
   color: var(--accent-color2); /* Только кружочки */
+}
+
+  .whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
 }
 
      footer {
