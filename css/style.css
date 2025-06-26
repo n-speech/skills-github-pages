@@ -334,14 +334,17 @@ body {
       padding: 0.8rem;
       font-size: 1rem;
     }
-     .banner-desktop {
+  }
+/* Показываем только мобильный баннер при ширине до 768px */
+@media (max-width: 768px) {
+  .banner-desktop {
     display: none;
   }
 
   .banner-mobile {
     display: block;
   }
-  }
+}
 
 
 
