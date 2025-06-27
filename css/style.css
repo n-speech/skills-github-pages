@@ -88,7 +88,7 @@ body {
   font-weight: 400;
   color: var(--text-color);
   background-color: var(--accent-color2);
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--main-color);
   border-radius: 9999px;
   cursor: pointer;
   display: inline-block;
