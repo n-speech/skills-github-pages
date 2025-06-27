@@ -49,7 +49,7 @@ body {
 
   
   .logo {
-    height: 35px;
+    height: 30px;
     margin: 0;
   }
   
@@ -111,7 +111,7 @@ body {
 }
 
  .login-button-wrapper:hover .login-button {
-      transform: translateY(-6px);
+      transform: translateY(-5px);
     }
 
  .login-button-wrapper:hover .login-button-shadow {
