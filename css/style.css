@@ -23,7 +23,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   width: 100%;
     /*max-width: 1200px;*/
-  padding-top: 30px;
+  padding-top: 40px;
   margin: 0 auto;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -43,13 +43,13 @@ body {
     justify-content:space-between;
     align-items: center;
     padding: 0 1rem;
-    height: 30px;
+    height: 40px;
     box-shadow: var(--shadow);
   }
 
   
   .logo {
-    height: 20px;
+    height: 30px;
     margin: 0;
   }
   
@@ -172,7 +172,7 @@ h2 {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 40px;
     right: 1rem;
     background: white;
     padding: 1rem;
