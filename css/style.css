@@ -261,7 +261,7 @@ h2 {
       justify-content: space-between;
     }
 
-    .course-card h2 {
+    .course-card h3 {
       font-size: 1.4rem;
       color: var(--main-color);
      /* margin-bottom: 0.5rem;*/
