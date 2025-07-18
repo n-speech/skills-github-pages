@@ -29,9 +29,6 @@ body {
   background-color: var(--bg-color);
   font-size: 16px;
   }
-main {
-   max-width: 900px;
-}
 
    /* ===== HEADER ===== */
   .header-container {
