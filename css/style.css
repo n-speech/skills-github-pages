@@ -180,11 +180,13 @@ h2 {
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 999;
-    width: 150px;
-    font-size: 18px;
+    width: 180px;
     border-radius: 12px;
   }
-
+  .nav a {
+      font-size: 20px;
+  }
+    
   .nav.show {
     display: flex;
   }
