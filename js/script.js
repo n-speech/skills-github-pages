@@ -30,4 +30,15 @@ document.addEventListener('click', (e) => {
     burger.innerHTML = '&#9776;';
   }
 });
+<script>
+  const btn = document.getElementById('read-more-btn');
+  const text = document.getElementById('extra-text');
+
+  btn.addEventListener('click', () => {
+    const isHidden = text.style.display === 'none';
+    text.style.display = isHidden ? 'inline' : 'none';
+    btn.textContent = isHidden ? 'Скрыть' : 'Читать дальше';
+  });
+</script>
+
 
