@@ -124,25 +124,6 @@
 <footer>
     <p>&copy; 2025 Онлайн школа Native Speech. Все права защищены.</p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
-  <script>
-  const lenis = new Lenis({
-    duration: 1.8, // Дольше — значит мягче (можно даже 2.5)
-    easing: t => 1 - Math.pow(1 - t, 4), // ещё более плавный easing
-    smooth: true,
-    smoothTouch: true,
-    touchMultiplier: 2, // замедляет пальцевую прокрутку
-    mouseMultiplier: 0.5, // замедляет мышь (0.5 — в 2 раза мягче)
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-</script>
   <script src="js/script.js"></script>
   
 </html>
