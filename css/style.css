@@ -368,7 +368,7 @@ h2 {
 }
     
   /* ===== MOBILE ADAPTATION ===== */
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     .course-card {
       width: 100%;
     }
