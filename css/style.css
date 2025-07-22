@@ -83,7 +83,7 @@ body {
 .login-button {
   position: relative;
   z-index: 1;
-  padding: 5px 15px 6px 15px;
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
@@ -184,7 +184,7 @@ h2 {
     border-radius: 12px;
   }
   .nav a {
-      font-size: 20px;
+      font-size: 1.3rem;
   }
     
   .nav.show {
