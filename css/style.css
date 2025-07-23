@@ -83,7 +83,7 @@ body {
 .login-button {
   position: relative;
   z-index: 1;
-  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  padding: 0.2rem 0.8rem 0.25rem 0.8rem;
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
