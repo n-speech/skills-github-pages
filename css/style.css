@@ -29,6 +29,9 @@ body {
   background-color: var(--bg-color);
   font-size: 1.2rem;
   }
+main {
+   max-width: 900px;
+}
 
    /* ===== HEADER ===== */
   .header-container {
@@ -410,6 +413,7 @@ h2 {
   }
 
 }
+
 
 
 
