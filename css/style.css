@@ -337,24 +337,30 @@ h2 {
   gap: 32px;
   align-items: center;        /* выравнивание по вертикали — "на одном уровне" */
   max-width: 1100px;
-  margin: 0 auto;           
+  margin: 0 auto;   
+  grid-template-areas: "text image"; 
 }
 
 /* Мобильный экран — одна колонка */
 @media (max-width: 900px) {
   .about-inner {
     grid-template-columns: 1fr;
+     grid-template-areas:
+      "image"
+      "text";
     gap: 18px;
   }
 }
   
 .about-text {
+  grid-area: text;
   color: #222;
   line-height: 1.6;
 }
 
 /* контейнер для картинки */
 .about-image {
+  grid-area: image;
   max-width: 90%;
   background-color: #f9f9f9;
   display: flex;
@@ -459,6 +465,7 @@ h2 {
   }
 
 }
+
 
 
 
