@@ -364,7 +364,7 @@ h2 {
 
 /* сама картинка — адаптивная */
 .about-image img {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: block;
   object-fit: contain;
@@ -458,6 +458,7 @@ h2 {
   }
 
 }
+
 
 
 
