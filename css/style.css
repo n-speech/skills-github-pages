@@ -328,9 +328,8 @@ h2 {
       /* ===== PAGE CONTENT ===== */
 /* CSS: добавьте в ваш файл стилей */
 .about-section {
-  padding: 40px 20px;
-  /* фон секции, если нужно — можно убрать */
-  background: #ffffff;
+  padding: 10px 5px;
+ 
 }
 
 .about-inner {
@@ -468,6 +467,7 @@ h2 {
   }
 
 }
+
 
 
 
