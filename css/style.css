@@ -328,7 +328,7 @@ h2 {
       /* ===== PAGE CONTENT ===== */
 /* CSS: добавьте в ваш файл стилей */
 .about-section {
-  padding: 10px 5px;
+  padding: 20px;
 }
 
 .about-inner {
@@ -458,6 +458,7 @@ h2 {
   }
 
 }
+
 
 
 
