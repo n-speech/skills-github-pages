@@ -326,6 +326,60 @@ h2 {
     }
 
       /* ===== PAGE CONTENT ===== */
+/* CSS: добавьте в ваш файл стилей */
+.about-section {
+  padding: 40px 20px;
+  /* фон секции, если нужно — можно убрать */
+  background: #ffffff;
+}
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: center;        /* выравнивание по вертикали — "на одном уровне" */
+  justify-content: space-between;
+  flex-wrap: wrap;            /* чтобы на узких экранах блоки переходили в колонку */
+}
+
+.about-text {
+  flex: 1 1 60%;              /* занимает остальное место */
+  min-width: 280px;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* подчёркиваем брендовый цвет в тексте */
+.about-text b { color: #023e8a; }
+
+/* контейнер для картинки */
+.about-image {
+  flex: 0 0 420px;            /* фиксированная ширина для картинки (подгоняйте) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* сама картинка — адаптивная */
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  /* лёгкая тень и тонкая рамка в брендовых цветах (опционально) */
+  box-shadow: 0 8px 24px rgba(2,62,138,0.08);
+  background: #ffd966; /* если картинка имеет прозрачный фон и нужно показать жёлтый */
+  padding: 8px;        /* опционально, смотрите результат */
+}
+
+/* мобильная адаптация */
+@media (max-width: 900px) {
+  .about-inner { flex-direction: column; gap: 18px; }
+  .about-image { order: -1; width: 100%; max-width: 640px; }
+  .about-text { width: 100%; }
+}
+
   .page1 {
     margin: 0 1rem 0rem 2rem;
     font-size: 1.3rem;
@@ -414,6 +468,7 @@ h2 {
   }
 
 }
+
 
 
 
