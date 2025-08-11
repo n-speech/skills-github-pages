@@ -356,7 +356,7 @@ h2 {
 
 /* контейнер для картинки */
 .about-image {
-  max-width: 100%;
+  max-width: 90%;
   order: 1;  /* по умолчанию в grid порядок как в HTML, этот может не сработать */
   grid-row: 1;
   background-color: #f9f9f9;
@@ -367,7 +367,7 @@ h2 {
 
 /* сама картинка — адаптивная */
 .about-image img {
-  width: 95%;
+  width: 85%;
   height: auto;
   display: block;
   object-fit: contain;
@@ -461,6 +461,7 @@ h2 {
   }
 
 }
+
 
 
 
