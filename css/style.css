@@ -366,10 +366,6 @@ h2 {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
-  /* лёгкая тень и тонкая рамка в брендовых цветах (опционально) */
-  box-shadow: 0 8px 24px rgba(2,62,138,0.08);
-  background-color: #f9f9f9;
 }
 
 /* мобильная адаптация */
@@ -467,6 +463,7 @@ h2 {
   }
 
 }
+
 
 
 
