@@ -333,7 +333,7 @@ h2 {
 }
 
 .about-inner {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   gap: 32px;
@@ -354,7 +354,7 @@ h2 {
 
 /* контейнер для картинки */
 .about-image {
-  flex: 0 0 400px;            /* фиксированная ширина для картинки (подгоняйте) */
+  flex: 0 0 500px;            /* фиксированная ширина для картинки (подгоняйте) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -463,6 +463,7 @@ h2 {
   }
 
 }
+
 
 
 
