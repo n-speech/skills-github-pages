@@ -340,6 +340,21 @@ h2 {
   margin: 0 auto;           
 }
 
+/* Мобильный экран — одна колонка */
+@media (max-width: 600px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* Планшет — например, от 601px до 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .about-inner {
+    grid-template-columns: 1fr 1fr; /* две равные колонки */
+    gap: 20px;
+  }
+  
 .about-text {
   color: #222;
   line-height: 1.6;
@@ -347,6 +362,7 @@ h2 {
 
 /* контейнер для картинки */
 .about-image {
+   max-width: 100%;
    background-color: #f9f9f9;
   display: flex;
   justify-content: center;
@@ -449,6 +465,7 @@ h2 {
   }
 
 }
+
 
 
 
