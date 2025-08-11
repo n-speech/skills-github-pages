@@ -349,14 +349,17 @@ h2 {
 }
   
 .about-text {
+  grid-row: 2;
   color: #222;
   line-height: 1.6;
 }
 
 /* контейнер для картинки */
 .about-image {
-   max-width: 100%;
-   background-color: #f9f9f9;
+  max-width: 100%;
+  order: 1;  /* по умолчанию в grid порядок как в HTML, этот может не сработать */
+  grid-row: 1;
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,6 +461,7 @@ h2 {
   }
 
 }
+
 
 
 
