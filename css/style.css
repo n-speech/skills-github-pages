@@ -329,49 +329,36 @@ h2 {
 /* CSS: добавьте в ваш файл стилей */
 .about-section {
   padding: 10px 5px;
- 
 }
 
 .about-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
   align-items: center;        /* выравнивание по вертикали — "на одном уровне" */
-  justify-content: space-between;
-  flex-wrap: wrap;            /* чтобы на узких экранах блоки переходили в колонку */
+  max-width: 1100px;
+  margin: 0 auto;           
 }
 
 .about-text {
-  flex: 1 1 300px;              /* занимает остальное место */
-  min-width: 280px;
   color: #222;
   line-height: 1.6;
 }
 
-/* подчёркиваем брендовый цвет в тексте */
-.about-text b { color: #023e8a; }
-
 /* контейнер для картинки */
 .about-image {
-  flex: 1 1 300px;            /* фиксированная ширина для картинки (подгоняйте) */
+   background-color: #f9f9f9;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #f9f9f9;
+  align-items: center;
 }
 
 /* сама картинка — адаптивная */
 .about-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
-}
-
-/* мобильная адаптация */
-@media (max-width: 600px) {
-  .about-inner { flex-direction: column; gap: 18px; }
-  .about-image { order: -1; width: 100%; max-width: 640px; }
-  .about-text { width: 100%; }
 }
 
   .page1 {
@@ -462,6 +449,7 @@ h2 {
   }
 
 }
+
 
 
 
