@@ -361,7 +361,7 @@ h2 {
 /* контейнер для картинки */
 .about-image {
   grid-area: image;
-  max-width: 90%;
+  max-width: 100%;
   background-color: #f9f9f9;
   display: flex;
   justify-content: center;
@@ -371,7 +371,7 @@ h2 {
 /* сама картинка — адаптивная */
 .about-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -465,6 +465,7 @@ h2 {
   }
 
 }
+
 
 
 
