@@ -346,6 +346,21 @@ h2 {
   flex-direction: row-reverse;
 }
 
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 390px;
+  width: 100%;
+  height: auto;
+}
 
 /* Мобильный экран — одна колонка */
 @media (max-width: 900px) {
@@ -471,6 +486,7 @@ h2 {
   }
 
 }
+
 
 
 
