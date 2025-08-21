@@ -341,6 +341,12 @@ h2 {
   grid-template-areas: "text image"; 
 }
 
+/* Второй блок: меняем порядок */
+.about-inner.reverse {
+  flex-direction: row-reverse;
+}
+
+
 /* Мобильный экран — одна колонка */
 @media (max-width: 900px) {
   .about-inner {
@@ -465,6 +471,7 @@ h2 {
   }
 
 }
+
 
 
 
