@@ -341,9 +341,14 @@ h2 {
   grid-template-areas: "text image"; 
 }
 
-/* Второй блок: меняем порядок */
-.about-inner.reverse {
-  flex-direction: row-reverse;
+/* 🔹 Картинка справа */
+.about-inner.right {
+  grid-template-areas: "text image";
+}
+
+/* 🔹 Картинка слева */
+.about-inner.left {
+  grid-template-areas: "image text";
 }
 
 .about-text {
@@ -486,6 +491,7 @@ h2 {
   }
 
 }
+
 
 
 
