@@ -352,26 +352,31 @@ h2 {
 }
 
 .about-text {
-  flex: 1;
+  grid-area: text;
+  color: #222;
+  line-height: 1.6;
 }
 
 .about-image {
-  flex: 1;
+  grid-area: image;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-image img {
-  max-width: 390px;
   width: 100%;
+  max-width: 390px;
   height: auto;
+  object-fit: contain;
 }
 
 /* Мобильный экран — одна колонка */
 @media (max-width: 900px) {
-  .about-inner {
+  .about-inner.right,
+  .about-inner.left {
     grid-template-columns: 1fr;
-     grid-template-areas:
+    grid-template-areas:
       "image"
       "text";
     gap: 18px;
@@ -491,6 +496,7 @@ h2 {
   }
 
 }
+
 
 
 
