@@ -333,10 +333,10 @@ h2 {
 
 .about-inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
   align-items: center;        /* выравнивание по вертикали — "на одном уровне" */
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;   
   grid-template-areas: "text image"; 
 }
@@ -496,6 +496,7 @@ h2 {
   }
 
 }
+
 
 
 
