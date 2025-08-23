@@ -336,7 +336,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 32px;
   align-items: center;        /* выравнивание по вертикали — "на одном уровне" */
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;   
   grid-template-areas: "text image"; 
 }
@@ -496,6 +496,7 @@ h2 {
   }
 
 }
+
 
 
 
