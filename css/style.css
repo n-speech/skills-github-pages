@@ -333,8 +333,8 @@ h2 {
 
 .about-inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 22px;
   align-items: center;        /* выравнивание по вертикали — "на одном уровне" */
   max-width: 1000px;
   margin: 0 auto;   
@@ -496,6 +496,7 @@ h2 {
   }
 
 }
+
 
 
 
