@@ -366,7 +366,7 @@ h2 {
 
 .about-image img {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
   object-fit: contain;
 }
@@ -496,6 +496,7 @@ h2 {
   }
 
 }
+
 
 
 
