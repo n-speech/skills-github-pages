@@ -89,7 +89,6 @@ main {
   z-index: 1;
   padding: 0.3rem 0.8rem 0.4rem 0.8rem;
   font-size: 0.9rem;
-  font-weight: bold;
   color: var(--text-color);
   background-color: var(--accent-color2);
   border: 1px solid var(--main-color);
@@ -125,7 +124,6 @@ main {
 
  .login-button:active {
       transform: scale(0.96);
-      font-weight: bold;
     }
 
   /* ===== BURGER ===== */
@@ -497,6 +495,7 @@ h2 {
   }
 
 }
+
 
 
 
