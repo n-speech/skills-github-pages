@@ -116,7 +116,7 @@ main {
 }
 
  .login-button-wrapper:hover .login-button {
-      transform: translateY(-4px);
+      transform: translateY(-3px);
     }
 
  .login-button-wrapper:hover .login-button-shadow {
@@ -496,6 +496,7 @@ h2 {
   }
 
 }
+
 
 
 
