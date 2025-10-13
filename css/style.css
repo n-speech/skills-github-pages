@@ -70,7 +70,7 @@ main {
   .nav a {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 
@@ -503,6 +503,7 @@ h2 {
   }
 
 }
+
 
 
 
