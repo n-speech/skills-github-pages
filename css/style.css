@@ -188,7 +188,7 @@ h2 {
     border-radius: 12px;
   }
   .nav a {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
   }
     
   .nav.show {
@@ -455,6 +455,10 @@ h2 {
     
   /* ===== MOBILE ADAPTATION ===== */
   @media (max-width: 1024px) {
+
+    .nav a {
+      font-size: 1.4rem;
+  }
     .course-card {
       width: 100%;
     }
@@ -496,6 +500,7 @@ h2 {
   }
 
 }
+
 
 
 
