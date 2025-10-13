@@ -71,6 +71,7 @@ main {
     text-decoration: none;
     color: var(--main-color);
     font-size: 1.1rem;
+    font-weight: 500;
   }
 
 .nav a:hover {
@@ -495,6 +496,7 @@ h2 {
   }
 
 }
+
 
 
 
