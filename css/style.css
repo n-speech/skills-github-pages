@@ -88,7 +88,7 @@ main {
 .login-button {
   position: relative;
   z-index: 1;
-  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   font-size: 0.9rem;
   color: var(--text-color);
   background-color: var(--accent-color2);
@@ -190,6 +190,9 @@ h2 {
   .nav a {
       font-size: 1.4rem;
   }
+      .login button {
+        padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+      }
     
   .nav.show {
     display: flex;
@@ -500,6 +503,7 @@ h2 {
   }
 
 }
+
 
 
 
