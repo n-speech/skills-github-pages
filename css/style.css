@@ -91,7 +91,7 @@ main {
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   font-size: 0.9rem;
   color: var(--text-color);
-  background-color: #F4EDDD;
+  background-color: #FFF3B9;
   border: 2px solid var(--main-color);
   border-radius: 9999px;
   cursor: pointer;
@@ -503,6 +503,7 @@ h2 {
   }
 
 }
+
 
 
 
