@@ -279,7 +279,7 @@ h2 {
 
     .course-card p {
       font-size: 1rem;
-      line-height: 1;
+      line-height: 0.5;
       color: var(--text-color);
       margin-bottom: 0.5rem;
     }
@@ -494,8 +494,8 @@ h2 {
   }
 
   .course-card p {
-    font-size: 1.2rem;       /* 15.2px */
-    line-height: 1.6;
+    font-size: 1rem;       /* 15.2px */
+    line-height: 1;
   }
 
   .course-card .more {
@@ -503,6 +503,7 @@ h2 {
   }
 
 }
+
 
 
 
