@@ -489,12 +489,12 @@ h2 {
     font-size: 1.5rem;
   }
   .page1 {
-    font-size: 1.2rem;          /* 16px */
+    font-size: 1.3rem;          /* 16px */
     line-height: 1.5;
   }
 
   .course-card p {
-    font-size: 1rem;       /* 15.2px */
+    font-size: 1.2rem;       /* 15.2px */
     line-height: 1.2;
   }
 
@@ -503,6 +503,7 @@ h2 {
   }
 
 }
+
 
 
 
