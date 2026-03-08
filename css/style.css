@@ -70,7 +70,7 @@ main {
   .nav a {
     text-decoration: none;
     color: #2E3192;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 600;
   }
 
@@ -504,6 +504,7 @@ h2 {
   }
 
 }
+
 
 
 
