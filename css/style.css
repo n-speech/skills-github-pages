@@ -490,20 +490,21 @@ h2 {
     margin-bottom: 1rem;
   }
   .page1 {
-    font-size: 1.2rem;          /* 16px */
+    font-size: 1.3rem;          /* 16px */
     line-height: 1.5;
   }
 
   .course-card p {
-    font-size: 1.1rem;       /* 15.2px */
+    font-size: 1.2rem;       /* 15.2px */
     line-height: 1.2;
   }
 
   .course-card .more {
-    font-size: 1rem;       /* 13.6px */
+    font-size: 1.1rem;       /* 13.6px */
   }
 
 }
+
 
 
 
