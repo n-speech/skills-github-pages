@@ -70,7 +70,7 @@ main {
   .nav a {
     text-decoration: none;
     color: #2E3192;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
   }
 
@@ -88,7 +88,7 @@ main {
 .login-button {
   position: relative;
   z-index: 1;
-  padding: 0.2rem 0.6rem;
+  padding: 0.1rem 0.5rem;
   font-size: 0.9rem;
   color: var(--text-color);
   background-color: #FFF3B9;
@@ -140,7 +140,6 @@ main {
  h1 {
   font-size: 1.7rem; 
   font-weight: 700;
-  line-height: 1.3;
   color: var(--main-color);
   margin: 1rem 1rem 0.5rem 2rem;
 }
@@ -148,7 +147,6 @@ main {
 h2 {
   font-size: 1.5rem; 
   font-weight: 600;
-  line-height: 1.3;
   color: var(--main-color);
   margin: 1rem 1rem 0.5rem 2rem;
 }
@@ -172,7 +170,7 @@ h2 {
 }
   
   /* ===== ADAPTIVE NAV ===== */
-    @media (max-width: 780px) {
+    @media (max-width: 380px) {
   .nav {
     display: none;
     flex-direction: column;
@@ -504,6 +502,7 @@ h2 {
   }
 
 }
+
 
 
 
