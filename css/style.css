@@ -15,14 +15,9 @@
   box-sizing: border-box;
 }
 /* Общие стили */
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
   width: 100%;
- /* max-width: 900px;*/
   padding-top: 45px;
   margin: 0 auto;
   color: var(--text-color);
@@ -30,7 +25,7 @@ body {
   font-size: 16px;
   }
 main {
-   max-width: 90%;
+  /* max-width: 90%; */
     margin: 0 auto;
 }
 
@@ -493,6 +488,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
