@@ -364,6 +364,7 @@ h2 {
 
   .page1 {
     color: var(--text-color);
+    margin-left: 2rem;
  }
   
   .page1 li::marker {
@@ -451,6 +452,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
