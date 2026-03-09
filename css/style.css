@@ -3,7 +3,7 @@
   --accent-color: #FFF3B9;
   --accent-color2: #ffd966;
   --bg-color: #f9f9f9;
-  --text-color: #241c15;
+  --text-color: #555;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --radius: 12px;
 }
@@ -503,6 +503,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
