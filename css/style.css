@@ -396,7 +396,7 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 769px) {
   .about-inner.right,
   .about-inner.left {
     grid-template-columns: 1fr;
@@ -446,3 +446,4 @@ footer {
     display: block;
   }
 }
+
