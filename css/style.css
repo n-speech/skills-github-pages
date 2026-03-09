@@ -363,11 +363,7 @@ h2 {
   object-fit: contain;
 }
 
-  .page1 {
-    color: var(--text-color);
-    margin-left: 2rem;
- }
-  
+ 
   .page1 li::marker {
   color: var(--accent-color2); /* Только кружочки */
 }
@@ -450,15 +446,9 @@ h2 {
       padding: 0.8rem;
       font-size: 1rem;
     }
-  
-  /* body {
-    font-size: 1.3rem;          /* 16px */
-  
-  } */
 
   h1 {
     font-size: 2rem;       /* 28px */
-
   }
 
   h2 {
@@ -480,6 +470,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
