@@ -317,11 +317,11 @@ h2 {
 .about-text {
   grid-area: text;
   color: #222;
-  font-size: 1.3rem; 
 }
 
 .about-text p {
   margin-left: 2rem;
+  font-size: 1.3rem;
 }
 .about-image {
   grid-area: image;
@@ -470,6 +470,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
