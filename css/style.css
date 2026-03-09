@@ -368,16 +368,6 @@ footer {
 /* ===== MEDIA QUERIES (от большего к меньшему) ===== */
 
 @media (max-width: 1300px) {
-  .page1 {
-    font-size: 21px;
-  }
-  .about-text p {
-    font-size: 21px;
-  }
-  
-  .nav a {
-    font-size: 1.5rem;
-  }
 
   .course-card {
     width: 100%;
@@ -397,22 +387,13 @@ footer {
   }
 
   .course-card h3 {
-    font-size: 1.5rem;
+   
     margin-bottom: 1rem;
   }
 
-  .course-card .more {
-    font-size: 1.1rem;
-  }
 }
 @media (max-width: 768px) {
 
-  .page1 {
-    font-size: 21px;
-  }
-  .about-text p {
-    font-size: 21px;
-  }
   
   .about-inner.right,
   .about-inner.left {
@@ -459,6 +440,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
