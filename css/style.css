@@ -396,7 +396,7 @@ h2 {
 /* сама картинка — адаптивная */
 .about-image img {
   width: 100%;
-  max-width: 150px;
+  max-width: 390px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -493,6 +493,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
