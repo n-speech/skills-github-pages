@@ -385,7 +385,10 @@ footer {
      .header-email {
     display: none;
   }
-  
+
+   .logo {
+    display: none;
+  }
   .about-inner.right,
   .about-inner.left {
     grid-template-columns: 1fr;
@@ -491,6 +494,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
