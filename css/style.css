@@ -464,7 +464,7 @@ textarea {
   padding: 16px;
   border: none;
   border-radius: 12px;
-  background: #FFD966;
+  background: #FCE27E;
   color: var(--text-color);
   font-size: 18px;
   font-weight: 600;
@@ -472,7 +472,7 @@ textarea {
 }
 
 .button:hover {
-  background: #FCE27E;
+  background: #FFD966; 
 }
 
 .small-text {
@@ -481,6 +481,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
