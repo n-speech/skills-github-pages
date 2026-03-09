@@ -368,6 +368,13 @@ footer {
 /* ===== MEDIA QUERIES (от большего к меньшему) ===== */
 
 @media (max-width: 1300px) {
+  .page1 {
+    font-size: 21px;
+  }
+  .about-text p {
+    font-size: 21px;
+  }
+  
   .nav a {
     font-size: 1.5rem;
   }
@@ -399,6 +406,14 @@ footer {
   }
 }
 @media (max-width: 768px) {
+
+  .page1 {
+    font-size: 21px;
+  }
+  .about-text p {
+    font-size: 21px;
+  }
+  
   .about-inner.right,
   .about-inner.left {
     grid-template-columns: 1fr;
@@ -444,6 +459,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
