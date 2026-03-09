@@ -310,7 +310,7 @@ h2 {
 
 .about-text p {
   margin-left: 2rem;
-  font-size: 1.3rem;
+  font-size: 21px;
 }
 
 .about-image {
@@ -459,6 +459,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
