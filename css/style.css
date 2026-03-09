@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 1rem;
+  margin-left:auto;
   margin-right: 1rem;
   padding: 1rem;
   gap: 2rem;
@@ -136,6 +136,7 @@ body {
 /* ===== BURGER ===== */
 .burger {
   display: none;
+  margin-left:20px;
   font-size: 2rem;
   background: none;
   cursor: pointer;
@@ -483,6 +484,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
