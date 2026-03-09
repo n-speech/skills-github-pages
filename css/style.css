@@ -315,6 +315,9 @@ h2 {
   font-size: 1.3rem; 
 }
 
+.about-text p {
+  margin-left: 2rem;
+}
 .about-image {
   grid-area: image;
   display: flex;
@@ -445,6 +448,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
