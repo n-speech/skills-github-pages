@@ -158,7 +158,7 @@ h2 {
   left: 0;
   bottom: -6px; /* смещение вниз от низа текста */
   width: 100%;
-  height: 6px; /* толщина полоски */
+  height: 5px; /* толщина полоски */
   background-color: var(--accent-color2);
   z-index: -1;
   border-radius: 2px;
@@ -488,6 +488,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
