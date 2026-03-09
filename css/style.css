@@ -334,7 +334,7 @@ h2 {
 
 .about-inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   align-items: center;        /* выравнивание по вертикали — "на одном уровне" */
   max-width: 900px;
@@ -499,6 +499,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
