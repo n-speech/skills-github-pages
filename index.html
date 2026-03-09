@@ -122,11 +122,57 @@
     </section>
         
     
-        <h1>Записаться на курс</h1>
-        <section id="inscription">
-       <p class="page1">Чтобы записаться и получить данные для входа в личный кабинет, напишите нам в <a href="https://wa.me/972538023264" target="_blank" class="whatsapp-btn">WhatsApp</a> 
- Или отправьте письмо на <span class="highlight">info@native-speech.com</span>.</p>
-  </section>
+<h1>Записаться на курс</h1>
+
+<section id="inscription">
+
+<div class="form-card">
+
+<form action="https://formspree.io/f/mwvrpdww" method="POST">
+
+<input type="text" name="_gotcha" style="display:none">
+
+<div class="form-group">
+<label>Имя</label>
+<input type="text" name="name" placeholder="Ваше имя" required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" name="email" placeholder="you@example.com" required>
+</div>
+
+<div class="form-group">
+<label>Телефон</label>
+<input type="tel" name="phone" placeholder="+7 999 123 45 67" required>
+</div>
+
+<div class="form-group">
+<label>Выберите курс</label>
+<select name="course" required>
+<option value="">-- Выберите курс --</option>
+<option>Французский с нуля</option>
+<option>Английский для среднего уровня</option>
+<option>Английский для детей</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Комментарий (опционально)</label>
+<textarea name="message" placeholder="Например, удобный мессенджер"></textarea>
+</div>
+
+<button class="button" type="submit">Записаться</button>
+
+<div class="small-text">
+Мы свяжемся с вами в течение рабочего дня
+</div>
+
+</form>
+
+</div>
+
+</section>
   
         <h1>Стоимость курсов</h1>
         <section id="payment">
@@ -148,6 +194,7 @@
   <script src="js/script.js"></script>
   
 </html>
+
 
 
 
