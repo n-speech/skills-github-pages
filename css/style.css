@@ -25,6 +25,11 @@ body {
   font-size: 16px;
   }
 
+  .page1 {
+  color: var(--text-color);
+  margin-left: 2rem;
+  font-size: 1.3rem;  /* ← добавь сюда */
+}
 
    /* ===== HEADER ===== */
   .header-container {
@@ -434,10 +439,7 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  .page1 {
-    font-size: 1.3rem;          /* 16px */
-    
-  }
+
 
   .course-card p {
     font-size: 1.2rem;       /* 15.2px */
@@ -448,6 +450,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
