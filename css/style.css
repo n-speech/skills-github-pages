@@ -395,8 +395,7 @@ footer {
     font-size: 1.1rem;
   }
 }
-
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .about-inner.right,
   .about-inner.left {
     grid-template-columns: 1fr;
@@ -405,9 +404,15 @@ footer {
       "text";
     gap: 18px;
   }
-}
 
-@media (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
   .nav {
     display: none;
     flex-direction: column;
@@ -437,13 +442,4 @@ footer {
   }
 }
 
-@media (max-width: 767px) {
-  .desktop-image {
-    display: none;
-  }
-
-  .mobile-image {
-    display: block;
-  }
-}
 
