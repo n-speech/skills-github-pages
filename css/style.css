@@ -379,13 +379,7 @@ footer {
     font-size: 1rem;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
+ 
 
   .course-card h3 {
    
@@ -441,6 +435,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
