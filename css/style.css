@@ -374,7 +374,9 @@ footer {
 
 }
 @media (max-width: 768px) {
-
+     .header-email {
+    display: none;
+  }
   
   .about-inner.right,
   .about-inner.left {
@@ -481,6 +483,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
