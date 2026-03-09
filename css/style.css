@@ -364,7 +364,7 @@ footer {
 
 /* ===== MEDIA QUERIES (от большего к меньшему) ===== */
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .nav a {
     font-size: 1.5rem;
   }
@@ -441,6 +441,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
