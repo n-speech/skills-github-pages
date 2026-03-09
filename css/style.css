@@ -136,14 +136,14 @@ main {
   font-size: 1.7rem; 
   font-weight: 700;
   color: var(--main-color);
-  margin: 1rem 1rem 0.5rem 1rem;
+  margin: 1rem 2rem 0.5rem 2rem;
 }
 
 h2 {
   font-size: 1.5rem; 
   font-weight: 600;
   color: var(--main-color);
-  margin: 1rem 1rem 0.5rem 1rem;
+  margin: 1rem 2rem 0.5rem 2rem;
 }
     
  .highlight {
@@ -488,6 +488,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
