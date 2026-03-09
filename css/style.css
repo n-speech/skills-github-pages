@@ -20,6 +20,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
   font-family: 'Segoe UI', sans-serif;
   width: 100%;
   padding-top: 45px;
@@ -440,6 +441,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
