@@ -31,9 +31,8 @@ body {
 }
 
 .header-email {
-  margin-left: 20px;
-  font-size: 14px;
-  color: #444;
+  font-size: 32px;
+  color: var(--text-color);
 }
 
 .page1 {
@@ -482,6 +481,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
