@@ -32,7 +32,7 @@ body {
 .page1 {
   color: var(--text-color);
   margin-left: 2rem;
-  font-size: 1.3rem;
+  font-size: 21px;
 }
 
 /* ===== HEADER ===== */
@@ -459,6 +459,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
