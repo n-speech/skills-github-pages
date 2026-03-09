@@ -184,7 +184,7 @@ h2 {
 /* ===== COURSE CARDS ===== */
 .card-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 1rem;
   justify-items: center;
@@ -284,12 +284,11 @@ h2 {
 
 .about-inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 25px;
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
-  grid-template-areas: "text image";
 }
 
 .about-inner.right {
@@ -441,6 +440,7 @@ footer {
     z-index: 1001;
   }
 }
+
 
 
 
