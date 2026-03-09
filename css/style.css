@@ -334,11 +334,7 @@ h2 {
     gap: 18px;
   }
 }
-  
-.about-text {
-  grid-area: text;
-  color: #222;
-}
+
 
 /* контейнер для картинки */
 .about-image {
@@ -449,6 +445,7 @@ h2 {
     font-size: 1.1rem;       /* 13.6px */
   }
 }
+
 
 
 
