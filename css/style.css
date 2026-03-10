@@ -474,18 +474,7 @@ footer {
 }
 
 /* ===== INPUTS ===== */
-.form-group input,
-.form-group select,
-.form-group textarea {
-  -webkit-appearance: none;
-}
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  box-shadow: none;
-}
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -541,6 +530,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
