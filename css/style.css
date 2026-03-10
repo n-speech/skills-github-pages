@@ -493,7 +493,7 @@ footer {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--accent-color2);
+  border-color: var(--main-color);
   box-shadow: 0 0 0 2px rgba(47,111,237,0.15);
   outline: none;
 }
@@ -533,6 +533,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
