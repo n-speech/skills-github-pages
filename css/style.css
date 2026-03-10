@@ -495,15 +495,6 @@ footer {
   color: #a0a7b1;
 }
 
-/* focus effect */
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #FCE27E;
-  box-shadow: 0 0 0 3px rgba(252,226,126,0.35);
-}
 
 /* textarea */
 
@@ -540,6 +531,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
