@@ -452,6 +452,13 @@ footer {
   margin: 40px auto;
 }
 
+.form-card h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 700;
+}
 .form-group {
   margin-bottom: 18px;
 }
@@ -499,6 +506,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
