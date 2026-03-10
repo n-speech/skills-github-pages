@@ -31,4 +31,43 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// === Scroll reveal ===
+function initScrollReveal() {
+  // Добавляем классы нужным элементам
+  const revealSelectors = [
+    { selector: 'h1',           cls: 'reveal' },
+    { selector: '.page1',       cls: 'reveal' },
+    { selector: '.course-card', cls: 'reveal' },
+    { selector: '.form-card',   cls: 'reveal' },
+    { selector: '.about-inner.right .about-text', cls: 'reveal from-right' },
+    { selector: '.about-inner.right .about-image', cls: 'reveal from-left' },
+    { selector: '.about-inner.left .about-text',  cls: 'reveal from-left' },
+    { selector: '.about-inner.left .about-image', cls: 'reveal from-right' },
+  ];
+
+  revealSelectors.forEach(({ selector, cls }) => {
+    document.querySelectorAll(selector).forEach(el => {
+      // Не добавляем дважды
+      if (!el.classList.contains('reveal')) {
+        cls.split(' ').forEach(c => el.classList.add(c));
+      }
+    });
+  });
+
+  // IntersectionObserver — запускает анимацию при появлении в зоне видимости
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // однократно
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', initScrollReveal);
 
