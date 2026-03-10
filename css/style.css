@@ -42,6 +42,11 @@ body {
   color: #234F9E;
 }
 
+.text-email {
+  font-size: 18px;
+  color: #234F9E;
+}
+
 .page1 {
   color: var(--text-color);
   margin-left: 2rem;
@@ -494,6 +499,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
