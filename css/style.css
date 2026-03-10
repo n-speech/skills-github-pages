@@ -465,7 +465,7 @@ footer {
 
 .form-group label {
   display: block;
-  font-size: 21px;
+  font-size: 18px;
   margin-bottom: 6px;
   color: #555;
 }
@@ -477,6 +477,7 @@ footer {
   padding: 14px 16px;
   border: 1px solid #dce0e6;
   border-radius: 10px;
+  font-size: 16px;
 }
 
 textarea {
@@ -506,6 +507,7 @@ textarea {
   text-align: center;
   margin-top: 12px;
 }
+
 
 
 
