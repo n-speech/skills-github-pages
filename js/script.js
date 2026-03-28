@@ -179,5 +179,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     assignClasses();
     initObserver();
-  }, 1800);
+  }, 300);
 });
