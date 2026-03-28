@@ -69,8 +69,14 @@ function initScrollReveal() {
   });
 
   const observer = new IntersectionObserver((entries) => {
+    let cardDelay = 0;
+
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        if (entry.target.classList.contains('course-card')) {
+          entry.target.style.transitionDelay = `${cardDelay}s`;
+          cardDelay += 0.2;
+        }
         entry.target.classList.add('visible');
         if (h1Triggers.has(entry.target)) {
           h1Triggers.get(entry.target).classList.add('visible');
@@ -86,10 +92,16 @@ function initScrollReveal() {
 
   // Сразу показываем элементы, которые уже видны при загрузке
   setTimeout(() => {
+    let cardDelay = 0;
+
     document.querySelectorAll('.reveal').forEach(el => {
       if (el.tagName === 'H1') return;
       const rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom > 0) {
+        if (el.classList.contains('course-card')) {
+          el.style.transitionDelay = `${cardDelay}s`;
+          cardDelay += 0.2;
+        }
         el.classList.add('visible');
         if (h1Triggers.has(el)) {
           h1Triggers.get(el).classList.add('visible');
