@@ -148,11 +148,13 @@ body {
 /* ===== BURGER ===== */
 .burger {
   display: none;
-  margin-left:20px;
+  margin-left: 20px;
   font-size: 2rem;
   background: none;
   cursor: pointer;
   border: none;
+  font-family: sans-serif; /* ← добавь это */
+  color: var(--main-color); /* ← и цвет явно */
 }
 
 /* ===== HEADINGS ===== */
