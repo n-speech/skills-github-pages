@@ -544,17 +544,6 @@ textarea {
               transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.reveal.from-left {
-  transform: translateX(-50px);
-}
-
-.reveal.from-right {
-  transform: translateX(50px);
-}
-
-.reveal.from-scale {
-  transform: scale(0.92) translateY(20px);
-}
 
 .reveal.visible {
   opacity: 1;
