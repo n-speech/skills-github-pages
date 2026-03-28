@@ -73,9 +73,9 @@ style.textContent = `
   }
 
   /* Задержки для stagger-эффекта */
-  .ns-delay-1 { transition-delay: 0.1s; }
-  .ns-delay-2 { transition-delay: 0.2s; }
-  .ns-delay-3 { transition-delay: 0.3s; }
+  .ns-delay-1 { transition-delay: 0s; }
+  .ns-delay-2 { transition-delay: 0.1s; }
+  .ns-delay-3 { transition-delay: 0.2s; }
 
   /* Подчёркивание заголовков h1 с анимацией */
   h1 {
