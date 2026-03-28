@@ -104,7 +104,7 @@ document.head.appendChild(style);
 function assignClasses() {
   /* Карточки курсов — вылетают снизу с задержкой */
   document.querySelectorAll('.course-card').forEach((card, i) => {
-    card.classList.add('ns-scale-in', `ns-delay-${i + 1}`);
+    card.classList.add(`ns-delay-${i + 1}`);
   });
 
   /* Блоки "О методике" — чередуем направление */
