@@ -52,12 +52,12 @@ style.textContent = `
   }
   .ns-fade-left {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-10px);
     transition: opacity 0.65s ease, transform 0.65s ease;
   }
   .ns-fade-right {
     opacity: 0;
-    transform: translateX(40px);
+    transform: translateX(10px);
     transition: opacity 0.65s ease, transform 0.65s ease;
   }
   .ns-scale-in {
