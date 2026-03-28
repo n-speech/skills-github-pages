@@ -174,10 +174,7 @@ function initParallax() {
 
 /* --- Запуск после загрузки DOM --- */
 document.addEventListener('DOMContentLoaded', () => {
+  assignClasses();
+  initObserver();
   initParallax();
-
-  setTimeout(() => {
-    assignClasses();
-    initObserver();
-  }, 300);
 });
