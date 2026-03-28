@@ -561,7 +561,8 @@ textarea {
 .about-inner .reveal:nth-child(2) { transition-delay: 0.15s; }
 
 
-
+h1.reveal { transition-delay: 0s; }
+page1.reveal  { transition-delay: 0.25s; }
 
 
 
