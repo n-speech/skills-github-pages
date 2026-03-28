@@ -37,49 +37,67 @@ function initScrollReveal() {
     { selector: '.page1',       cls: 'reveal' },
     { selector: '.course-card', cls: 'reveal' },
     { selector: '.form-card',   cls: 'reveal' },
-    { selector: '.about-inner.right .about-text', cls: 'reveal from-right' },
+    { selector: '.about-inner.right .about-text',  cls: 'reveal from-right' },
     { selector: '.about-inner.right .about-image', cls: 'reveal from-left' },
-    { selector: '.about-inner.left .about-text',  cls: 'reveal from-left' },
-    { selector: '.about-inner.left .about-image', cls: 'reveal from-right' },
+    { selector: '.about-inner.left .about-text',   cls: 'reveal from-left' },
+    { selector: '.about-inner.left .about-image',  cls: 'reveal from-right' },
   ];
 
   revealSelectors.forEach(({ selector, cls }) => {
     document.querySelectorAll(selector).forEach(el => {
-      if (!el.classList.contains('reveal')) {
-        cls.split(' ').forEach(c => el.classList.add(c));
-      }
+      cls.split(' ').forEach(c => { if (c) el.classList.add(c); });
     });
   });
 
-  // Добавляем reveal к h1, но без отдельного observer
-  document.querySelectorAll('h1').forEach(el => {
-    if (!el.classList.contains('reveal')) el.classList.add('reveal');
+  document.querySelectorAll('h1').forEach(el => el.classList.add('reveal'));
+
+  // Для каждого h1 находим первый .reveal-элемент после него — триггер
+  const h1Triggers = new Map();
+
+  document.querySelectorAll('h1').forEach(h1 => {
+    let sibling = h1.nextElementSibling;
+    while (sibling) {
+      const target = sibling.classList.contains('reveal')
+        ? sibling
+        : sibling.querySelector('.reveal');
+      if (target) {
+        h1Triggers.set(target, h1);
+        break;
+      }
+      sibling = sibling.nextElementSibling;
+    }
   });
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-
-        // Если это первая карточка — активируем ближайший h1 выше неё
-        if (entry.target.classList.contains('course-card')) {
-          const allCards = [...document.querySelectorAll('.course-card')];
-          if (allCards.indexOf(entry.target) === 0) {
-            // Ищем h1, который стоит перед секцией с карточками
-            const section = entry.target.closest('section') || entry.target.parentElement;
-            const heading = section?.querySelector('h1') ?? document.querySelector('h1');
-            if (heading) heading.classList.add('visible');
-          }
+        if (h1Triggers.has(entry.target)) {
+          h1Triggers.get(entry.target).classList.add('visible');
         }
-
         observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.15
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    if (el.tagName !== 'H1') observer.observe(el);
   });
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  // Сразу показываем элементы, которые уже видны при загрузке
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => {
+      if (el.tagName === 'H1') return;
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('visible');
+        if (h1Triggers.has(el)) {
+          h1Triggers.get(el).classList.add('visible');
+        }
+        observer.unobserve(el);
+      }
+    });
+  }, 50);
 }
 
 document.addEventListener('DOMContentLoaded', initScrollReveal);
