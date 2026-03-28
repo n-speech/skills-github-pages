@@ -47,7 +47,7 @@ style.textContent = `
   /* Базовое состояние — элемент невидим до анимации */
   .ns-fade-up {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(10px);
     transition: opacity 0.65s ease, transform 0.65s ease;
   }
   .ns-fade-left {
