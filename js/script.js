@@ -33,9 +33,7 @@ document.addEventListener('click', (e) => {
 
 // === Scroll reveal ===
 function initScrollReveal() {
-  // Добавляем классы нужным элементам
   const revealSelectors = [
-    { selector: 'h1',           cls: 'reveal' },
     { selector: '.page1',       cls: 'reveal' },
     { selector: '.course-card', cls: 'reveal' },
     { selector: '.form-card',   cls: 'reveal' },
@@ -47,19 +45,34 @@ function initScrollReveal() {
 
   revealSelectors.forEach(({ selector, cls }) => {
     document.querySelectorAll(selector).forEach(el => {
-      // Не добавляем дважды
       if (!el.classList.contains('reveal')) {
         cls.split(' ').forEach(c => el.classList.add(c));
       }
     });
   });
 
-  // IntersectionObserver — запускает анимацию при появлении в зоне видимости
+  // Добавляем reveal к h1, но без отдельного observer
+  document.querySelectorAll('h1').forEach(el => {
+    if (!el.classList.contains('reveal')) el.classList.add('reveal');
+  });
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // однократно
+
+        // Если это первая карточка — активируем ближайший h1 выше неё
+        if (entry.target.classList.contains('course-card')) {
+          const allCards = [...document.querySelectorAll('.course-card')];
+          if (allCards.indexOf(entry.target) === 0) {
+            // Ищем h1, который стоит перед секцией с карточками
+            const section = entry.target.closest('section') || entry.target.parentElement;
+            const heading = section?.querySelector('h1') ?? document.querySelector('h1');
+            if (heading) heading.classList.add('visible');
+          }
+        }
+
+        observer.unobserve(entry.target);
       }
     });
   }, {
