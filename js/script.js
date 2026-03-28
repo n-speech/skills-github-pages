@@ -1,30 +1,31 @@
-// === Бургер-меню ===
-const burger = document.getElementById('burger');
-const nav = document.getElementById('nav');
-const navLinks = document.querySelectorAll('#nav a');
+document.addEventListener('DOMContentLoaded', () => {
 
-burger.addEventListener('click', (e) => {
-  e.stopPropagation();
-  nav.classList.toggle('show');
-  burger.innerHTML = nav.classList.contains('show') ? '&times;' : '&#9776;';
-});
+  // === Бургер-меню ===
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  const navLinks = document.querySelectorAll('#nav a');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('show');
-    burger.innerHTML = '&#9776;';
+  burger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    nav.classList.toggle('show');
+    burger.innerHTML = nav.classList.contains('show') ? '&times;' : '&#9776;';
   });
-});
 
-document.addEventListener('click', (e) => {
-  if (!nav.contains(e.target) && !burger.contains(e.target)) {
-    nav.classList.remove('show');
-    burger.innerHTML = '&#9776;';
-  }
-});
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('show');
+      burger.innerHTML = '&#9776;';
+    });
+  });
 
-// === Scroll reveal ===
-function initScrollReveal() {
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !burger.contains(e.target)) {
+      nav.classList.remove('show');
+      burger.innerHTML = '&#9776;';
+    }
+  });
+
+  // === Scroll reveal ===
   const revealSelectors = [
     { selector: '.page1',       cls: 'reveal' },
     { selector: '.course-card', cls: 'reveal' },
@@ -43,7 +44,6 @@ function initScrollReveal() {
 
   document.querySelectorAll('h1').forEach(el => el.classList.add('reveal'));
 
-  // Для каждого h1 находим первый .reveal-элемент после него — триггер
   const h1Triggers = new Map();
 
   document.querySelectorAll('h1').forEach(h1 => {
@@ -62,7 +62,6 @@ function initScrollReveal() {
 
   const observer = new IntersectionObserver((entries) => {
     let cardDelay = 0;
-
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         if (entry.target.classList.contains('course-card')) {
@@ -85,7 +84,6 @@ function initScrollReveal() {
   // Сразу показываем элементы, которые уже видны при загрузке
   setTimeout(() => {
     let cardDelay = 0;
-
     document.querySelectorAll('.reveal').forEach(el => {
       if (el.tagName === 'H1') return;
       const rect = el.getBoundingClientRect();
@@ -102,6 +100,5 @@ function initScrollReveal() {
       }
     });
   }, 50);
-}
 
-document.addEventListener('DOMContentLoaded', initScrollReveal);
+});
