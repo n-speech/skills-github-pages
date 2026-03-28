@@ -175,7 +175,7 @@ h2 {
 .highlight {
   position: relative;
   display: inline-block;
-  line-height: 1.2;
+  line-height: 3px;
 }
 
 .highlight::after {
