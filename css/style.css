@@ -245,7 +245,8 @@ h2 {
   justify-content: space-between;
 }
 
-.course-card h3 {
+.course-card h3,
+.course-card h4 {
   font-size: 1.6rem;
   color: var(--main-color);
 }
