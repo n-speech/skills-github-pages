@@ -217,7 +217,7 @@ h2 {
 
 .course-card {
   width: 100%;
-  max-width: 350px;
+  max-width: 360px;
   background: #fff;
   border-radius: var(--radius);
   overflow: hidden;
