@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
   font-family: 'Segoe UI', sans-serif;
   width: 100%;
-  padding-top: 45px;
+  padding-top: 0; /* убрали — хедер теперь не fixed */
   margin: 0 auto;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -53,23 +53,29 @@ body {
 }
 
 /* ===== HEADER ===== */
+
+/*
+  Логика:
+  - Хедер изначально position: relative — скроллится вместе со страницей
+  - Когда он уходит за верх экрана, JS добавляет класс .sticky —
+    хедер становится fixed и "прилипает" к верху
+  - При скролле вверх на достаточно — снова relative
+*/
+
 .header-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative; /* по умолчанию — скроллится со страницей */
   z-index: 1000;
   color: #2E3192;
 
-  /* Полупрозрачный фон с blur */
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* Белый фон — светлее фона страницы (#f9f9f9) */
+  background: #ffffff;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+
+  /* Ширина хедера уже страницы, как в исходнике: padding 1rem 3rem */
+  padding: 0 3rem;
   height: 45px;
 
   /* Свечение по бокам + нижняя тень */
@@ -78,12 +84,19 @@ body {
      60px 0 80px 20px rgba(2, 62, 138, 0.10),
     0 4px 12px rgba(0, 0, 0, 0.06);
 
-  /* Плавное скрытие/появление при скролле */
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
-/* Скрытие при скролле вниз */
-.header-container.hidden {
+/* Когда хедер "прилип" — становится fixed */
+.header-container.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Скрытие при скролле вниз (только когда sticky) */
+.header-container.sticky.hidden {
   transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
@@ -230,7 +243,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 8%; /* как в исходнике: 8% по бокам */
   justify-items: center;
 }
 
@@ -321,7 +334,7 @@ h2 {
 
 /* ===== PAGE CONTENT ===== */
 .about-section {
-  padding: 5px;
+  padding: 5px 8%; /* 8% по бокам как в исходнике */
 }
 
 .about-inner {
@@ -382,8 +395,8 @@ h2 {
 
 footer {
   margin-top: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 8%;
+  margin-right: 8%;
   margin-bottom: 2rem;
   font-size: 1rem;
   text-align: center;
@@ -393,7 +406,7 @@ footer {
   border-radius: 8px;
 }
 
-/* ===== MEDIA QUERIES (от большего к меньшему) ===== */
+/* ===== MEDIA QUERIES ===== */
 
 @media (max-width: 1300px) {
   .course-card {
@@ -407,6 +420,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .header-container {
+    padding: 0 1rem; /* на мобильном меньше отступы */
+  }
+
   .header-email {
     display: none;
   }
@@ -430,6 +447,19 @@ footer {
 
   .mobile-image {
     display: block;
+  }
+
+  .card-row {
+    padding: 1rem;
+  }
+
+  .about-section {
+    padding: 5px 1rem;
+  }
+
+  footer {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .nav {
@@ -576,4 +606,4 @@ textarea {
 .about-inner .reveal:nth-child(2) { transition-delay: 0.15s; }
 
 h1.reveal { transition-delay: 0s; }
-page1.reveal  { transition-delay: 0.25s; }
+page1.reveal { transition-delay: 0.25s; }
